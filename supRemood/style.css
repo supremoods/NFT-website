@@ -4,10 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 
 :root{
+    --pure-white: rgb(247, 247, 247);
     --light-gray: #f0f2f7;
     --light-gray-alt: #e4e7ef;
     --dark-gray: #b9bed1;
@@ -21,6 +23,7 @@
     --aqua: #51dde9;
     --aqua-alt: #08bfc5;
 }
+
 
 
 .content{
@@ -68,7 +71,7 @@
 
   .menu-list li a{
     color: var(--dark-blue-alt);
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     margin-left: 25px;
     text-decoration: none;
@@ -79,10 +82,12 @@
     color: var(--aqua-alt);
   }
 
-  
+
 .icon{
+
     color: var(--dark-blue-alt);
     font-size: 20px;
+
     cursor: pointer;
     display: none;
   }
@@ -119,9 +124,19 @@
     background-color: var(--light-gray);
   }
 
-  
 
 
+.cover{
+  background-color: var(--light-gray);
+  height: 100vh;
+}
+
+h1{
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  top: 50%;
+}
 
   .market{
       background-color: var(--light-gray-alt);
@@ -130,7 +145,7 @@
 
 
   .about-us{
-    background-color: var(--dark-blue);
+    background-color: var(--pure-white);
     height: 100vh;
   }
 
@@ -151,12 +166,17 @@
         background-color: rgba(255, 0, 0, 0);
         color: var(--dark-blue-alt);
         box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-        
+
     }
 
     #reg-btn:hover{
         color: var(--aqua-alt);
         background-color: rgba(255, 0, 0, 0);
+    }
+
+    .menu-btn{
+      position: relative;
+      left: 1.5em;
     }
 
     .icon{
@@ -165,7 +185,8 @@
       width: 50px;
       text-align: center;
       line-height: 50px;
-      border-radius: 50%;
+      border-radius: 10%;
+
       z-index: 9;
     }
 
@@ -175,15 +196,15 @@
     }
     .icon.cancel-btn{
       display: none;
-      
+
     }
     .icon.cancel-btn.show{
       display: block;
-     
+
     }
     .icon.hide{
       display: none;
-    
+
     }
     .navbar .menu-list{
       position: fixed;
@@ -191,7 +212,7 @@
       left: 0;
       height: 100vh;
       width: 100%;
-      background: var(--light-gray-alt);
+      background: var(--light-gray);
       display: block;
       padding: 40px 0;
       text-align: center;
@@ -199,7 +220,8 @@
       transition: all 0.3s ease;
     }
     .navbar.sticky .menu-list{
-      clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+      clip-path: circle(0px at calc(100% - 55px) calc(0% + 35px));
+      
     }
     .navbar .menu-list.active{
       clip-path: circle(75%);
@@ -209,11 +231,11 @@
     }
     .navbar .menu-list li a{
       font-size: 23px;
-        
+
     }
 
     .navbar.sticky .menu-list li a{
         color: var(--dark-blue-alt);
     }
   }
-  
+
