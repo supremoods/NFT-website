@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;900&display=swap%27');
+
+:root{
+   --light-gray: #f0f2f7;
+   --light-gray-alt: #e4e7ef;
+   --dark-gray: #b9bed1;
+   --dark-gray-alt: #a1a6bb;
+   --dark-blue: #2a405b;
+   --dark-blue-alt: #222328;
+   --blue: #3b55e6;
+   --blue-alt: #334cd5;
+   --yellow:#f3d351;
+   --yellow-alt: #ebc63b;
+}
+
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+header .carousel-inner .item {
+	height: 100vh;
+}
+.banner {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+.carousel-caption {
+	padding-bottom: 250px;
+	font-family: Montserrat;
+}
+.carousel-caption h2 {
+	font-size: 100px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+.carousel-caption h2 span {
+	color: #ffffff;
+}
+.carousel-caption h3 {
+	font-size: 40px;
+}
+.carousel-caption .lp-btn {
+	background: var(--blue-alt);
+	padding: 10px 20px;
+	display: inline-block;
+	margin-top: 15px;
+	color: #ffffff;
+	text-transform: uppercase;
+	border-radius: 25px;
+   text-decoration: none;
+   font-size: 20px;
+   transition: all 0.2s ease-in-out;
+   
+}
+.carousel-caption .lp-btn:hover{
+   background: var(--dark-blue);
+}
+.carousel-indicators .active {
+	background-color: var(--blue-alt);
+	border-color: var(--blue-alt) ;
+  
+}
+.fas{
+   margin-left:  1rem;
+}
+/*responsive css*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		padding-bottom: 350px;
+	}
+	.carousel-caption h2 {
+		font-size: 50px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-inverse .navbar-brand {
+		font-size: 30px;
+		padding: 20px 15px;
+	}
+	.navbar-collapse {
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.carousel-caption {
+		padding-bottom: 120px;
+	}
+	.carousel-caption h2 {
+		font-size: 25px;
+	}
+	.carousel-caption h3 {
+		font-size: 18px;
+	}
+	.carousel-caption a {
+		padding: 10px 25px;
+	}
+}
