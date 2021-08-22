@@ -52,7 +52,7 @@ $('#deposit-amount').on('input', function(){
     this.value = this.value.slice(0,8);
   }
   let receive = $('#receive-amount');
-  let value = parseFloat($('#deposit-amount').val() * 30).toFixed(2);
+  let value = parseFloat($('#deposit-amount').val() * .60).toFixed(2);
   receive.val(value);
   inputInvalid();
 });
@@ -62,7 +62,7 @@ $('#receive-amount').on('input', function(){
     this.value = this.value.slice(0,9);
   }
   let deposit = $('#deposit-amount');
-  let value = parseFloat($('#receive-amount').val() / 30).toFixed(2);
+  let value = parseFloat($('#receive-amount').val() / .60).toFixed(2);
   deposit.val(value);
   inputInvalid();
 });
