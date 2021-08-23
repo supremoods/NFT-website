@@ -1,0 +1,102 @@
+body {
+	margin-top: 100px;
+	background-color: white;
+	color:#2a405b;
+	font-family: 'monserrat', sans-serif;
+	}
+
+.loginbody {
+	margin: auto;
+	width: 410px;
+    height: 470px;
+	border:none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px #3333331a;
+	}
+	
+h1 {
+	padding-top: 25px;
+    font-size: 30px;
+	text-align: center;
+	}
+	
+.center {
+	display: block;
+	margin-top: 45px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	width: 120px;
+	height: 100px;
+}
+
+.iconId i {
+	position: absolute;
+	padding: 10px;
+	}
+
+icon {
+	padding-left: 16px;
+    padding-top: 10px;
+}
+.form {
+	display: block;
+	padding-top: 5px;
+	margin-left: 63px;
+	margin-right: auto;
+	
+}
+.textplace {
+    width: 70%;
+	margin-bottom: 20px;
+    padding: 10px 10px 10px 25px;
+	border: 1px solid white;
+	border-radius:7px;
+    text-align: left;
+	text-indent:8px;
+	border-color:#2a405b30;
+	font-weight: 300;
+	color:#2a405b;
+	box-shadow: 1px 1px 1px #6b6b6bcc, 1px 0px 1px rgb(255 255 255);
+	}
+
+input:focus{
+        outline: none;
+        background:#2a405b21;
+}
+.btnForgetPwd {
+    color: black;
+	font-size: 13px;
+    font-weight: 300;
+	text-decoration: none;
+	
+
+}
+.btnForgetPwd:hover, .donthaveacc:hover {
+	
+	opacity: 0.7;
+	color:#2a405b;
+}
+.donthaveacc {
+	float: center;
+    color: black;
+	font-size: 13px;
+    font-weight: 300;
+	text-decoration: none;
+	margin-left: 83px;
+}
+
+.button{
+	margin-top: 25px;
+	margin-left: 62px;
+    background-color: #2a405b;
+	border: 2px solid white;
+	border-radius:15px;
+	padding:4px;
+	color: white;
+	width: 150px;
+}
+.button:hover {
+	background-color: black;
+	color:white;
+}
