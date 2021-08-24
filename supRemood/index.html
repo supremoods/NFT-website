@@ -21,11 +21,13 @@
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
           </div>
-          <li class="links"><a href="#cover-section">Home</a></li>
-          <li class="links"><a href="#about-section">About us</a></li>
-          <li class="links"><a href="market_page.html">Gallery</a></li>
+          <li class="links"><a class="btn-link1" href="#cover-section">Home</a></li>
+          <li class="links"><a  class="btn-link2" href="#about-section">About us</a></li>
+          <li class="links"><a class="btn-links" href="market_page.html">Gallery</a></li>
+          <li class="links"><a class="btn-link3" href="#contact-us">Contact Us</a></li>
           <li><a id="log-in-btn" href="Log In.html">Log in</a></li>
           <li><a id="reg-btn" href="create.html">Register</a></li>
+          
         </ul>
         <div class="icon menu-btn">
           <i class="fab fa-mendeley"></i>
@@ -177,7 +179,19 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
   <script src="assets/js/scriptFeat.js"></script>
 
+  <div class="contact-section" id="contact-us">
+    <h1>Contact Us</h1>
+    <div class="border"></div>
+    <form class="contact-form" action="index.html" method="post">
+        <input type="text" class="contact-form-text" placeholder="Your name">
+        <input type="email" class="contact-form-text" placeholder="Your email">
+        <input type="text" class="contact-form-text" placeholder="Your phone">
+        <textarea class="contact-form-text" placeholder="Your message"></textarea>
+        <input type="submit" class="contact-form-btn" value="Send">
+    </form>
 
+
+  </div>
 
   <section class="footer">
     <div class="social">
@@ -190,11 +204,12 @@
     <ul class="list">
       <li><a href="#home">Home</a></li>
       <li><a href="#gallery-section">Gallery</a></li>
-      <li><a href="#about-section">About me</a></li>
+      <li><a href="#about-section">About us</a></li>
+      <li><a href="#contact-us">Contact us</a></li>
     </ul>
 
     <p class="copyright">
-      digitrad @ 2021
+      ALPAS @ 2021
     </p>
   </section>
 

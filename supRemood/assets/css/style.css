@@ -21,11 +21,11 @@
   --yellow: #f3d351;
   --yellow-alt: #ebc63b;
   --aqua: #51dde9;
-  
+
   --aqua-alt: #04f3fc;
 }
 
-body{
+body {
   background: var(--dark-blue-alt);
 }
 
@@ -39,10 +39,8 @@ body{
   z-index: 5;
   width: 100%;
   padding: 10px 0;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   /* background-color: #f0f2f7f3; */
-
-  
 }
 .nav-bar.sticky {
   padding: 10px 0;
@@ -52,7 +50,6 @@ body{
 
 .nav-bar.sticky .menu-list li a {
   color: var(--dark-blue-alt);
-
 }
 
 .nav-bar.sticky .menu-list li a:hover {
@@ -69,8 +66,6 @@ body{
   font-weight: 760;
   letter-spacing: 0.1em;
   text-decoration: none;
-  
-  
 }
 .nav-bar .menu-list {
   display: inline-flex;
@@ -130,7 +125,7 @@ body{
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-    color: var(--dark-blue-alt);
+  color: var(--dark-blue-alt);
 }
 
 #reg-btn {
@@ -165,14 +160,10 @@ h1 {
   top: 50%;
 }
 
-
-
 .about-us {
   background-color: var(--pure-white);
   height: 80vh;
 }
-
-
 
 @media (max-width: 868px) {
   body.disabledScroll {
@@ -200,7 +191,7 @@ h1 {
     background-color: rgba(255, 0, 0, 0);
   }
 
-  #log-in-btn:hover{
+  #log-in-btn:hover {
     background-color: #00a6ff00;
     color: var(--aqua-alt);
   }
@@ -300,58 +291,59 @@ h1 {
   }
 }
 
-
-.slider{
-	position: relative;
-	width: 100%;
+.slider {
+  position: relative;
+  width: 100%;
   height: 100vh;
-	background: #2c3e50; /* darckblue */
-  
+  background: #2c3e50; /* darckblue */
 }
-.myslide{
-	height: 100vh;
-	display: none;
-	overflow: hidden;
+.myslide {
+  height: 100vh;
+  display: none;
+  overflow: hidden;
 }
 
-.prev, .next{
-	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-	font-size: 50px;
-	padding: 15px;
-	cursor: pointer;
-	color: #fff;
-	transition: 0.1s;
-	user-select: none;
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.1s;
+  user-select: none;
 }
-.prev:hover, .next:hover{
-	color: #00a7ff; /* blue */
+.prev:hover,
+.next:hover {
+  color: #00a7ff; /* blue */
 }
-.next{
-	right: 0;
+.next {
+  right: 0;
 }
-.dotsbox{
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
-	bottom: 20px;
-	cursor: pointer;
+.dotsbox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+  cursor: pointer;
 }
-.dot{
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	border: 3px solid #fff;
-	border-radius: 50%;
-	margin: 0 10px;
-	cursor: pointer;
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
 }
 /* /2 */
 
 /* javascript */
-.active, .dot:hover{
-	border-color: #00a7ff; /* blue */
+.active,
+.dot:hover {
+  border-color: #00a7ff; /* blue */
 }
 /* /javascript */
 
@@ -364,149 +356,228 @@ h1 {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* /muslide add fade */
 
 /* 3 */
-.txt{
-	position: absolute;
-	color: #fff;
+.txt {
+  position: absolute;
+  color: #fff;
 
-	letter-spacing: 2px;
-	line-height: 35px;
-	top: 70%;
-	left: 13%;
-	-webkit-animation-name: posi;
-  	-webkit-animation-duration: .4s;
-  	animation-name: posi;
-  	animation-duration: .4s;
-	z-index: 1;
+  letter-spacing: 2px;
+  line-height: 35px;
+  top: 70%;
+  left: 13%;
+  -webkit-animation-name: posi;
+  -webkit-animation-duration: 0.4s;
+  animation-name: posi;
+  animation-duration: 0.4s;
+  z-index: 1;
 }
-
-
 
 @-webkit-keyframes posi {
-  from {left: 25%;
-  opacity: 0.2;}
-  to {left: 13%;
-    opacity: 1;}
+  from {
+    left: 25%;
+    opacity: 0.2;
+  }
+  to {
+    left: 13%;
+    opacity: 1;
+  }
 }
-
 
 @keyframes posi {
-  from {left: 25%;
-    opacity: 0.2;}
-  to {left: 13%;
-    opacity: 1;}
+  from {
+    left: 25%;
+    opacity: 0.2;
+  }
+  to {
+    left: 13%;
+    opacity: 1;
+  }
 }
 
-.txt h1{
+.txt h1 {
   text-align: left;
-	color: #04f4fc;
-	font-size: 5em;
+  color: #04f4fc;
+  font-size: 5em;
   font-weight: 700;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.txt p{
+.txt p {
   text-align: justify;
-	font-size: 2em;
+  font-size: 2em;
   position: absolute;
   padding-top: 1em;
   font-weight: 600;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  
 }
 
-.txt-2{
-	position: absolute;
-	color: var(--pure-white);
+.txt-2 {
+  position: absolute;
+  color: var(--pure-white);
   text-align: justify;
-	letter-spacing: 2px;
-	line-height: 35px;
-	top: 50%;
-	left: 55%;
-	-webkit-animation-name: posi-2;
-  	-webkit-animation-duration: .4s;
-  	animation-name: posi-2;
-  	animation-duration: .4s;
-	z-index: 2;
+  letter-spacing: 2px;
+  line-height: 35px;
+  top: 50%;
+  left: 55%;
+  -webkit-animation-name: posi-2;
+  -webkit-animation-duration: 0.4s;
+  animation-name: posi-2;
+  animation-duration: 0.4s;
+  z-index: 2;
 }
 
 @-webkit-keyframes posi-2 {
-  from {left: 45%;}
-  to {left: 55%;}
+  from {
+    left: 45%;
+  }
+  to {
+    left: 55%;
+  }
 }
-
 
 @keyframes posi-2 {
   from {
     left: 45%;
-    opacity: 0.1;}
-  to {left: 55%;
-    opacity: 0.9;}
+    opacity: 0.1;
+  }
+  to {
+    left: 55%;
+    opacity: 0.9;
+  }
 }
-.txt-2 h1{
+.txt-2 h1 {
   font-size: 5em;
   font-weight: 700;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.txt-2 p{
-	font-size: 20px;
+.txt-2 p {
+  font-size: 20px;
   position: absolute;
   padding-top: 2em;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.txt-4{
-	position: absolute;
-	color: var(--pure-white);
+.txt-4 {
+  position: absolute;
+  color: var(--pure-white);
   text-align: justify;
-	letter-spacing: 2px;
-	line-height: 35px;
-	top: 50%;
-	left: 50%;
-	-webkit-animation-name: posi-4;
-  	-webkit-animation-duration: 2s;
-  	animation-name: posi-4;
-  	animation-duration: 2s;
-	z-index: 2;
+  letter-spacing: 2px;
+  line-height: 35px;
+  top: 50%;
+  left: 50%;
+  -webkit-animation-name: posi-4;
+  -webkit-animation-duration: 2s;
+  animation-name: posi-4;
+  animation-duration: 2s;
+  z-index: 2;
 }
 
+.contact-section {
+  background-color: var(--dark-blue-alt);
+  padding: 40px 0;
+}
+.contact-section h1 {
+  text-align: center;
+  color: var(--aqua-alt);
 
+  font-weight: 600;
+}
+.border {
+  width: 100px;
+  height: 10px;
+  background: var(--aqua-alt);
+  margin: 40px auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 1px var(--aqua);
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: var(--aqua-alt);
+  color: var(--dark-blue-alt);
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover {
+  background: var(--aqua);
+}
 
 @-webkit-keyframes posi-4 {
-  from {left: 45%;}
-  to {left: 50;}
+  from {
+    left: 45%;
+  }
+  to {
+    left: 50;
+  }
 }
-
 
 @keyframes posi-4 {
   from {
     left: 45%;
-    opacity: 0.1;}
-  to {left: 50%;
-    opacity: 0.9;}
+    opacity: 0.1;
+  }
+  to {
+    left: 50%;
+    opacity: 0.9;
+  }
 }
-.txt-4 h1{
+.txt-4 h1 {
   font-size: 5em;
   font-weight: 700;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.txt-4 p{
-	font-size: 20px;
+.txt-4 p {
+  font-size: 20px;
   position: absolute;
   padding-top: 2em;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -514,96 +585,116 @@ h1 {
 /* /3 */
 
 /* 4 */
-.slide-img{
-	transform: scale(1.5, 1.5);
-	-webkit-animation-name: zoomin;
-  	-webkit-animation-duration: 40s;
-  	animation-name: zoomin;
-  	animation-duration: 40s;
+.slide-img {
+  transform: scale(1.5, 1.5);
+  -webkit-animation-name: zoomin;
+  -webkit-animation-duration: 40s;
+  animation-name: zoomin;
+  animation-duration: 40s;
 }
 @-webkit-keyframes zoomin {
-  from {transform: scale(1, 1);}
-  to {transform: scale(1.5, 1.5);}
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
 }
 
-
 @keyframes zoomin {
-  from {transform: scale(1, 1);}
-  to {transform: scale(1.5, 1.5);}
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
 }
 /* /4 */
 
-@media screen and (max-width: 1438px){
-  .txt-2{
-    width:70%;
+@media screen and (max-width: 1438px) {
+  .txt-2 {
+    width: 70%;
     /* padding: 2em; */
-		letter-spacing: 2px;
-		line-height: 25px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-webkit-animation-name: pos3;
-		-webkit-animation-duration: 2s;
-		animation-name: pos3;
-		animation-duration: 2s;
-    transition: all ease-in-out .2s;
-	}
+    letter-spacing: 2px;
+    line-height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: pos3;
+    -webkit-animation-duration: 2s;
+    animation-name: pos3;
+    animation-duration: 2s;
+    transition: all ease-in-out 0.2s;
+  }
 
-	@-webkit-keyframes pos3 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
+  @-webkit-keyframes pos3 {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 50%;
+    }
+  }
 
+  @keyframes pos3 {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 50%;
+    }
+  }
 
-	@keyframes pos3 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
-
-	.txt-2 h1{
+  .txt-2 h1 {
     text-align: justify;
-		font-size: 4em;
-   
-	}
-	.txt-2 p{
+    font-size: 4em;
+  }
+  .txt-2 p {
     padding-top: 20px;
-		font-size: 20px;
-	}
+    font-size: 20px;
+  }
 
-  .txt-4{
-    width:70%;
+  .txt-4 {
+    width: 70%;
     /* padding: 2em; */
-		letter-spacing: 2px;
-		line-height: 25px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-webkit-animation-name: pos4;
-		-webkit-animation-duration: 2s;
-		animation-name: pos4;
-		animation-duration: 2s;
-    transition: all ease-in-out .2s;
-	}
+    letter-spacing: 2px;
+    line-height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: pos4;
+    -webkit-animation-duration: 2s;
+    animation-name: pos4;
+    animation-duration: 2s;
+    transition: all ease-in-out 0.2s;
+  }
 
-	@-webkit-keyframes pos4 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
+  @-webkit-keyframes pos4 {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 50%;
+    }
+  }
 
+  @keyframes pos4 {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 50%;
+    }
+  }
 
-	@keyframes pos4 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
-
-	.txt-4 h1{
+  .txt-4 h1 {
     text-align: justify;
-		font-size: 4em;
-	}
-	.txt-4 p{
+    font-size: 4em;
+  }
+  .txt-4 p {
     padding-top: 20px;
-		font-size: 20px;
-	}
+    font-size: 20px;
+  }
 }
 
 .footer {
@@ -670,113 +761,130 @@ h1 {
   color: var(--dark-blue);
 }
 /* 5 */
-@media screen and (max-width: 800px){
-	.myslide{
-		height: 100vh;
-	}
-	.txt{
+@media screen and (max-width: 800px) {
+  .myslide {
+    height: 100vh;
+  }
+  .txt {
     width: 65%;
-		letter-spacing: 2px;
-		line-height: 25px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-webkit-animation-name: posi2;
-		-webkit-animation-duration: 2s;
-		animation-name: posi2;
-		animation-duration: 2s;
-    transition: all ease-in-out .2s;
-	}
+    letter-spacing: 2px;
+    line-height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: posi2;
+    -webkit-animation-duration: 2s;
+    animation-name: posi2;
+    animation-duration: 2s;
+    transition: all ease-in-out 0.2s;
+  }
 
-	@-webkit-keyframes posi2 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
+  @-webkit-keyframes posi2 {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 50%;
+    }
+  }
 
+  @keyframes posi2 {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 50%;
+    }
+  }
 
-	@keyframes posi2 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
-
-	.txt h1{
+  .txt h1 {
     color: #04f3fc;
-		font-size: 60px;
+    font-size: 60px;
     text-align: left;
     line-height: 1em;
-	}
-	.txt p{
+  }
+  .txt p {
     padding-top: 2px;
     line-height: 40px;
-		font-size: 2em;
+    font-size: 2em;
     text-align: left;
-	}
+  }
 
-  .txt-2{
+  .txt-2 {
     width: 65%;
-		letter-spacing: 2px;
-		line-height: 25px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-webkit-animation-name: posi3;
-		-webkit-animation-duration: 2s;
-		animation-name: posi3;
-		animation-duration: 2s;
-	}
+    letter-spacing: 2px;
+    line-height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: posi3;
+    -webkit-animation-duration: 2s;
+    animation-name: posi3;
+    animation-duration: 2s;
+  }
 
-	@-webkit-keyframes posi3 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
+  @-webkit-keyframes posi3 {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 50%;
+    }
+  }
 
+  @keyframes posi3 {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 50%;
+    }
+  }
 
-	@keyframes posi3 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
-
-	.txt-2 h1{
-		font-size: 40px;
-	}
-	.txt-2 p{
+  .txt-2 h1 {
+    font-size: 40px;
+  }
+  .txt-2 p {
     padding-top: 20px;
-		font-size: 13px;
-	}
+    font-size: 13px;
+  }
 
-  
-  .txt-4{
+  .txt-4 {
     width: 65%;
-		letter-spacing: 2px;
-		line-height: 25px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-webkit-animation-name: posi4;
-		-webkit-animation-duration: 2s;
-		animation-name: posi4;
-		animation-duration: 2s;
-	}
+    letter-spacing: 2px;
+    line-height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: posi4;
+    -webkit-animation-duration: 2s;
+    animation-name: posi4;
+    animation-duration: 2s;
+  }
 
-	@-webkit-keyframes posi4 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
+  @-webkit-keyframes posi4 {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 50%;
+    }
+  }
 
+  @keyframes posi4 {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 50%;
+    }
+  }
 
-	@keyframes posi4 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
-
-	.txt-4 h1{
-		font-size: 40px;
-	}
-	.txt-4 p{
-		font-size: 13px;
-	}
-
+  .txt-4 h1 {
+    font-size: 40px;
+  }
+  .txt-4 p {
+    font-size: 13px;
+  }
 }
 /* /5 */
-
-
