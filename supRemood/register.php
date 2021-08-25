@@ -1,3 +1,6 @@
+<?php 
+	include("phpFunctions/registerFunc.php");
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -29,6 +32,7 @@
       </div>
     </nav>
   </div>
+
   <div class="regContainer">
     <div id="registerContainer">
       <br>
@@ -37,7 +41,7 @@
         <img src="photo1629544662-removebg-preview.png" class="center">
       </div>
 
-      <form class=registerhead1>
+      <form class=registerhead1 method="post">
 
         <i class="fa fa-user "></i>
         <input class="textbox" type="text" name="username" id="username" placeholder="Username " required /><br>
@@ -57,12 +61,12 @@
         <i class="toggleView-2 far fa-eye-slash" id="togglePassword"></i><br>
 
         <a href="Log In.html" class="haveacc">Already have an account?</a>
-
+        <div class="RegisterButton">
+        <input id="submit-button" type="submit" value="Register" name="submit"></input>
+      </div>
       </form>
 
-      <div class="RegisterButton">
-        <input id="submit-button" type="submit" value="Register"></input>
-      </div>
+
     </div>
   </div>
 
@@ -88,4 +92,27 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/account.js"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+    
+var modal = document.getElementById("myModal");
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  </script>
 </body>
+
+</html>

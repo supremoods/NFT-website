@@ -49,3 +49,6 @@ $(".toggleView-2").click(function() {
     input.attr("type", "password");
   }
 });
+
+
+
