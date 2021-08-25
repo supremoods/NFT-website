@@ -19,10 +19,10 @@
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
           </div>
-          <li class="links"><a href="index.html#cover-section">Home</a></li>
-          <li class="links"><a href="index.html#about-section">About us</a></li>
-          <li class="links"><a href="market_page.html">Gallery</a></li>
-          <li><a id="reg-btn" href="create.html">Register</a></li>
+          <li class="links"><a href="index.php#cover-section">Home</a></li>
+          <li class="links"><a href="index.php#about-section">About us</a></li>
+          <li class="links"><a href="market_page.php">Gallery</a></li>
+          <li><a id="reg-btn" href="register.php">Register</a></li>
         </ul>
         <div class="icon menu-btn">
           <i class="fab fa-mendeley"></i>
@@ -61,9 +61,10 @@
     </div>
 
     <ul class="list">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#gallery-section">Gallery</a></li>
-      <li><a href="#about-section">About us</a></li>
+      <li><a href="index.php#home">Home</a></li>
+      <li><a href="market_page.php">Gallery</a></li>
+      <li><a href="index.php#about-section">About us</a></li>
+      <li><a href="index.php#contact-us">Contact us</a></li>
     </ul>
 
     <p class="copyright">

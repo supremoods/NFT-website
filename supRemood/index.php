@@ -23,10 +23,10 @@
           </div>
           <li class="links"><a class="btn-link1" href="#cover-section">Home</a></li>
           <li class="links"><a  class="btn-link2" href="#about-section">About us</a></li>
-          <li class="links"><a class="btn-links" href="market_page.html">Gallery</a></li>
+          <li class="links"><a class="btn-links" href="market_page.php">Gallery</a></li>
           <li class="links"><a class="btn-link3" href="#contact-us">Contact Us</a></li>
-          <li><a id="log-in-btn" href="Log In.html">Log in</a></li>
-          <li><a id="reg-btn" href="create.html">Register</a></li>
+          <li><a id="log-in-btn" href="log_in.php">Log in</a></li>
+          <li><a id="reg-btn" href="register.php">Register</a></li>
           
         </ul>
         <div class="icon menu-btn">
@@ -202,8 +202,8 @@
     </div>
 
     <ul class="list">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#gallery-section">Gallery</a></li>
+      <li><a href="index.php#cover-section">Home</a></li>
+      <li><a href="market_page.php">Gallery</a></li>
       <li><a href="#about-section">About us</a></li>
       <li><a href="#contact-us">Contact us</a></li>
     </ul>
