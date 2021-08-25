@@ -2,27 +2,34 @@
 * {
   margin: 0;
   padding: 0;
-
   scroll-behavior: smooth;
 }
+
 body {
   background-color: white;
   color: #2a405b;
-  font-family: "monserrat", sans-serif;
+  font-family: "Monserrat", sans-serif;
 }
+
 .regContainer {
-  height: 90vh;
+  height: calc(90vh + 100px);
 }
+
 #registerContainer {
   width: 410px;
-  height: 70%;
+  height: auto;
   border: none;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px #3333331a;
+  padding-bottom: 35px;
   position: relative;
+
+  /*
   top: 8em;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%);*/
+  margin: auto;
+  top: 5em;
 }
 
 #registerheader {
@@ -78,7 +85,7 @@ label {
   height: 100px;
 }
 
-.button {
+input[type=submit] {
   margin-top: 15px;
   background-color: #2a405b;
   border: 2px solid white;
@@ -87,7 +94,8 @@ label {
   color: white;
   width: 150px;
 }
-.button:hover {
+
+button[type=submit]:hover {
   background-color: black;
   color: white;
 }
@@ -110,7 +118,7 @@ label {
 }
 
 .footer {
-  width: 100%;
+  position: relative;
   bottom: 0;
   padding: 40px 0;
   background-color: var(--light-gray);
@@ -173,4 +181,23 @@ label {
   text-align: center;
   font-size: 13px;
   color: var(--dark-blue);
+}
+
+input[type=submit]:disabled{
+  background: lightgray;
+  cursor: not-allowed;
+}
+
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 1400px) {
+  .regContainer{
+    height: 90vh;
+  }
 }

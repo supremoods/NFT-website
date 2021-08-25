@@ -36,42 +36,36 @@
         <h1 id="registerheader"> REGISTER</h1>
         <img src="photo1629544662-removebg-preview.png" class="center">
       </div>
-  
-      <div class=registerhead1>
-  
-  
+
+      <form class=registerhead1>
+
         <i class="fa fa-user "></i>
         <input class="textbox" type="text" name="username" id="username" placeholder="Username " required /><br>
-  
-  
-  
+
         <i class="fa fa-envelope"></i>
         <input class="textbox" type="email" name="email" id="email" placeholder="Email " required /><br>
-  
-  
-  
+
         <i class="fas fa-unlock-alt "></i>
         <input class="textbox" type="password" name="password" id="password" placeholder="Password" required />
-        <i class="far fa-eye" id="togglePassword" onclick="toggle()"></i>
+        <i class="toggleView-1 far fa-eye-slash" id="togglePassword"></i>
         <br>
-  
-  
-  
+
+
+
         <i class="fas fa-unlock-alt "></i>
-        <input class="textbox" type="password" name="co_password" id="co_password" placeholder="Confirm Password "
-          required />
-        <i class="far fa-eye" id="togglePassword"></i><br>
-  
+        <input class="textbox" type="password" name="co_password" id="co_password" placeholder="Confirm Password " required />
+        <i class="toggleView-2 far fa-eye-slash" id="togglePassword"></i><br>
+
         <a href="Log In.html" class="haveacc">Already have an account?</a>
-  
-      </div>
-  
+
+      </form>
+
       <div class="RegisterButton">
-        <button class="button" type="submit">Register</button>
+        <input id="submit-button" type="submit" value="Register"></input>
       </div>
     </div>
   </div>
- 
+
   <section class="footer">
     <div class="social">
       <a href="http://"><i class="fab fa-instagram"></i></a>
@@ -91,9 +85,7 @@
       ALPAS @ 2021
     </p>
   </section>
-  <script src="showpassword.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/account.js"></script>
   <script src="assets/js/script.js"></script>
 </body>

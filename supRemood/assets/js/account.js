@@ -2,11 +2,6 @@ const submitButton = $('#submit-button');
 
 $(function(){
   submitButton.prop('disabled', true);
-  if(!$('#username').val() || !$('#email').val() || !$('#password').val() || !$('#co_password').val())
-    submitButton.attr('disabled', true);
-  else {
-    submitButton.attr('disabled', false);
-  }
 });
 
 $('.textbox').on('input', function() {
@@ -32,5 +27,25 @@ $('#co_password').on('input', function() {
   } else if($(this).val() != $('#password').val()){
     $(this).css('border', '1px solid red');
     $('#password').css('border', '1px solid red');
+  }
+});
+
+$(".toggleView-1").click(function() {
+  let input = $('#password');
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+
+$(".toggleView-2").click(function() {
+  let input = $('#co_password');
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
   }
 });
