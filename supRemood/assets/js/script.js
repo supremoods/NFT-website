@@ -7,6 +7,9 @@ const link1 = document.querySelector('.btn-link1');
 const link2 = document.querySelector('.btn-link2');
 const link3 = document.querySelector('.btn-link3');
 
+window.onload = function() {
+  ProtectImageJS.protect(ProtectImageJS.getLabelledImages())
+}
 
 menuBtn.onclick = ()=>{
   menu.classList.add("active");
@@ -30,7 +33,7 @@ link1.onclick = ()=>{
 	body.classList.remove("disabledScroll");
 }
 
-  
+
 link3.onclick = ()=>{
 	menu.classList.remove("active");
 	menuBtn.classList.remove("hide");
@@ -70,7 +73,7 @@ function resetTimer() {
 }
 
 function slidefun(n) {
-	
+
 	let i;
 	for(i = 0;i<myslide.length;i++){
 		myslide[i].style.display = "none";

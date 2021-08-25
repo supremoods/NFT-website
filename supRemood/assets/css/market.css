@@ -24,9 +24,8 @@
   justify-content: space-evenly;
   align-content: center;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 5%;
-  /*background: #FFFBFB;*/
-  background: red;
+  grid-gap: 20px;
+  background: #FFFBFB;
 }
 
 .line{
@@ -55,12 +54,37 @@
   overflow: hidden;
 }
 
-#thumbnail{
+.thumbnail{
+  position: relative;
+  z-index: 1;
   width: -webkit-fill-available;
   height: 225px;
   object-fit: cover;
   object-position: center;
 }
+
+canvas{
+  width: -webkit-fill-available;
+}
+
+.thumb{
+  position: relative;
+}
+
+/*
+.thumb::after {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: red;
+  background-image: url('http://placehold.it/100x100/09f/fff.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  content: "WATERMARK";
+}*/
 
 .artwork-description{
   margin: 5px 10px;
