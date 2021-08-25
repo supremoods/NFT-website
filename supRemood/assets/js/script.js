@@ -91,6 +91,3 @@ function slidefun(n) {
 	dot[counter - 1].className += " active";
 }
 
-
-
-// slide-featr
