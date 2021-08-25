@@ -26,6 +26,7 @@
   grid-template-columns: auto auto auto auto;
   grid-gap: 20px;
   background: #FFFBFB;
+  margin-top: 2em;
 }
 
 .line{
@@ -59,12 +60,13 @@
   z-index: 1;
   width: -webkit-fill-available;
   height: 225px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
 canvas{
   width: -webkit-fill-available;
+  aspect-ratio: auto;
 }
 
 .thumb{
@@ -272,6 +274,11 @@ canvas{
   .grid-item-container {
     grid-template: auto;
   }
+
+  .grid-item {
+    height: auto;
+    width: 300px;
+  }
 }
 @media screen and (max-width: 1300px) {
   .grid-container {
@@ -303,7 +310,6 @@ canvas{
   .grid-item {
     margin: auto;
     height: auto;
-    width: 80%;
   }
 
   .grid-item div {
