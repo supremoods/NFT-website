@@ -9,7 +9,7 @@
             $email = $_POST['email'];
             $password = $_POST['password'];
 
-            
+    
             $checkUsername = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM `user` WHERE `username` = '$username'"));
             $checkEmail = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM `user` WHERE `email` = '$email'"));
 
