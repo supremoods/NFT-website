@@ -26,6 +26,7 @@
           <li class="links"><a  class="btn-link2" href="#about-section">About us</a></li>
           <li class="links"><a class="btn-links" href="market_page.php">Gallery</a></li>
           <li class="links"><a class="btn-link3" href="#contact-us">Contact Us</a></li>
+
           <?php
           session_start();
           if(!ISSET($_SESSION['id'])){
@@ -34,18 +35,19 @@
               <li><a id='reg-btn' href='register.php'>Register</a></li>
             ";
           }else{
-            echo "<li class='links'><a class='btn-link3' href='phpFunctions/logout.php'><i class='fas fa-user-astronaut'></i></a></li>";
+           // echo "<li class='links'><a class='btn-link3' href='phpFunctions/logout.php'></a></li>";
 
             echo '
             <li>
-            <a href="#" class="desktop-link">Features</a>
+            <a href="#" class="desktop-link child_1"><i class="fas fa-user-astronaut"></i></a>
+            <a href="#" class="desktop-link child_2">Account</a>
             <input type="checkbox" id="show-features">
-            <label for="show-features">Features</label>
             <ul class = "drop-down">
-              <li><a href="#">Drop Menu 1</a></li>
-              <li><a href="#">Drop Menu 2</a></li>
-              <li><a href="#">Drop Menu 3</a></li>
-              <li><a href="#">Drop Menu 4</a></li>
+              <li><a href="#">Account Details</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">NFT</a></li>
+              <li><a href="#">Available Balance</a></li>
+              <li><a class="btn-link3" href="phpFunctions/logout.php">Logout</a></li>
             </ul>
             </li>
             ';

@@ -44,12 +44,12 @@ body {
 }
 .nav-bar.sticky {
   padding: 10px 0;
-  background: #1447adc9;
+  background: var(--dark-blue-alt);
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .nav-bar.sticky .menu-list li a {
-  color: var(--dark-blue-alt);
+  color: var(--light-gray-alt);
 }
 
 .nav-bar.sticky .menu-list li a:hover {
@@ -94,7 +94,7 @@ body {
   color: var(--pure-white);
   font-size: 14px;
   font-weight: 550;
-  margin-left: 20px;
+  margin-left: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -104,9 +104,56 @@ body {
   color: var(--aqua-alt);
   transition: all ease-in-out 0.4s;
 }
+.menu-list input[type="checkbox"]{
+  display: none;
+}
+.menu-list li label{
+  display: none;
+}
+
+.menu-list li .drop-down{
+  position: absolute;
+  background: var(--dark-blue-alt);
+  padding: 1em;
+  border-radius: 10px;
+  top: 40px;
+  right: 30px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s ease;
+}
+.menu-list li:hover > .drop-down{
+  top: 50px;
+  opacity: 1;
+  visibility: visible;
+  
+}
 
 
+.menu-list .drop-down li a{
+  color: var(--light-gray-alt);
+  margin-left: 0px;
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 10px!important;
+  transition: all .6s ease;
+}
 
+.menu-list .drop-down li a:hover{
+  color: var(--aqua-alt);
+
+}
+
+.menu-list .drop-down li{
+  position: relative;
+}
+
+
+.child_2{
+  display: none;
+}
 .icon {
   color: var(--dark-blue-alt);
   font-size: 20px;
@@ -228,6 +275,8 @@ h1 {
   .menu-list li #reg-btn:hover::before {
     width: 100%;
   }
+
+
   .menu-btn {
     position: relative;
     left: 1.5em;
@@ -257,6 +306,38 @@ h1 {
     display: none;
   }
 
+  .child_1{
+    display: none;
+  }
+  .child_2{
+    display: block;
+  }
+  
+  /*  {
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  } */
+
+  .menu-list li .drop-down {
+    position: inherit;
+    left: 0;
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    background: none;
+    padding: 0;
+  }
+
   .nav-bar .menu-list {
     position: fixed;
     top: 0;
@@ -268,6 +349,7 @@ h1 {
     padding: 40px 0;
     text-align: center;
     clip-path: circle(0px at calc(100% - 55px) calc(0% + 50px));
+    visibility: visible;
     transition: all 0.3s ease;
   }
   .nav-bar.sticky .menu-list {
