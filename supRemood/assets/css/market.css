@@ -43,6 +43,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.bid-price h5{
+  font-weight: 500;
+}
 
 .grid-item {
   background-color: #FFFBFB;
@@ -119,6 +122,7 @@ canvas{
 .grid-item h5{
   font-size: 13px;
   text-align: right;
+  font-weight:600;
 }
 
 .grid-item img {

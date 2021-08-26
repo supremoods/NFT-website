@@ -34,9 +34,21 @@
               <li><a id='reg-btn' href='register.php'>Register</a></li>
             ";
           }else{
-            echo "<li class='links'><a class='btn-link3' href='phpFunctions/logout.php'><i class='fas fa-user-astronaut'></i></a></li>";
+            echo '
+            <li>
+            <a href="#" class="desktop-link child_1"><i class="fas fa-user-astronaut"></i></a>
+            <input type="checkbox" id="show-features">
+            <ul class = "drop-down">
+              <li><a href="#">Account Details</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">NFT</a></li>
+              <li><a href="#">Available Balance</a></li>
+              <li><a class="btn-link3" href="phpFunctions/logout.php">Logout</a></li>
+            </ul>
+            </li>
+            ';
           }
-          ?>    
+          ?>      
         </ul>
         <div class="icon menu-btn">
           <i class="fab fa-mendeley"></i>
@@ -76,7 +88,7 @@
               <p>Current bid</p>
               <div class="bid-price">
                 <img class="token" src="images/token.png" height="20" width="20">
-                <h5><b> 10.00 BUSD </b></h5>
+                <h5> 10.00 BUSD </h5>
               </div>
             </div>
             <div class="line w-price">
@@ -99,7 +111,7 @@
               <p>Current bid</p>
               <div class="bid-price">
                 <img class="token" src="images/token.png" height="20" width="20">
-                <h5><b> 10.00 BUSD </b></h5>
+                <h5> 10.00 BUSD </h5>
               </div>
             </div>
             <div class="line w-price">
@@ -113,39 +125,17 @@
         </div>
       </div>
 
+     
       <div class="grid-item">
         <div>
-          <img protected class="thumbnail" src="images/116644223_3066677110117577_2177439978553768644_o.jpg" alt="sample image">
+          <img protected class="thumbnail" src="images/103565282_2930085473776742_4986999794956651481_o.jpg" alt="sample image">
           <div class="artwork-description">
             <h6><b> PORTRAIT </b></h6>
             <div class="line">
               <p>Current bid</p>
               <div class="bid-price">
                 <img class="token" src="images/token.png" height="20" width="20">
-                <h5><b> 10.00 BUSD </b></h5>
-              </div>
-            </div>
-            <div class="line w-price">
-              <p class="price"><b> = PHP 1,000.00 </b></p>
-            </div>
-            <div class="line creator">
-              <p class="p-content"> Creator </p>
-              <h5> John Lappot </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <div>
-          <img protected class="thumbnail" src="images\101913208_2933299430122013_2989485938663813675_o.jpg" alt="sample image">
-          <div class="artwork-description">
-            <h6><b> PORTRAIT </b></h6>
-            <div class="line">
-              <p>Current bid</p>
-              <div class="bid-price">
-                <img class="token" src="images/token.png" height="20" width="20">
-                <h5><b> 10.00 BUSD </b></h5>
+                <h5> 10.00 BUSD </h5>
               </div>
             </div>
             <div class="line w-price">
@@ -168,7 +158,30 @@
               <p>Current bid</p>
               <div class="bid-price">
                 <img class="token" src="images/token.png" height="20" width="20">
-                <h5><b> 10.00 ALP </b></h5>
+                <h5> 10.00 BUSD </h5>
+              </div>
+            </div>
+            <div class="line w-price">
+              <p class="price"><b> = PHP 1,000.00 </b></p>
+            </div>
+            <div class="line creator">
+              <p class="p-content"> Creator </p>
+              <h5> John Lappot </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div>
+          <img protected class="thumbnail" src="images\101913208_2933299430122013_2989485938663813675_o.jpg" alt="sample image">
+          <div class="artwork-description">
+            <h6><b> PORTRAIT </b></h6>
+            <div class="line">
+              <p>Current bid</p>
+              <div class="bid-price">
+                <img class="token" src="images/token.png" height="20" width="20">
+                <h5> 10.00 ALP </h5>
               </div>
             </div>
             <div class="line w-price">

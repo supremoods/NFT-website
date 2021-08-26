@@ -35,12 +35,9 @@
               <li><a id='reg-btn' href='register.php'>Register</a></li>
             ";
           }else{
-           // echo "<li class='links'><a class='btn-link3' href='phpFunctions/logout.php'></a></li>";
-
             echo '
             <li>
             <a href="#" class="desktop-link child_1"><i class="fas fa-user-astronaut"></i></a>
-            <a href="#" class="desktop-link child_2">Account</a>
             <input type="checkbox" id="show-features">
             <ul class = "drop-down">
               <li><a href="#">Account Details</a></li>
