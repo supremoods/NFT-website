@@ -10,9 +10,12 @@
             $query = "SELECT * FROM user WHERE username = '$username' AND password = '$password'";
             
             $cmd = mysqli_query($conn,$query);
+            $row = mysqli_fetch_array($cmd);
             $count = mysqli_num_rows($cmd);
 
             if($count == 1){
+                session_start();
+                $_SESSION['id'] = $row['userID'];
                 header("location:index.php");
             }else{
                 echo "

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,9 +26,31 @@
           <li class="links"><a  class="btn-link2" href="#about-section">About us</a></li>
           <li class="links"><a class="btn-links" href="market_page.php">Gallery</a></li>
           <li class="links"><a class="btn-link3" href="#contact-us">Contact Us</a></li>
-          <li><a id="log-in-btn" href="log_in.php">Log in</a></li>
-          <li><a id="reg-btn" href="register.php">Register</a></li>
-          
+          <?php
+          session_start();
+          if(!ISSET($_SESSION['id'])){
+            echo"
+              <li><a id='log-in-btn' href='log_in.php'>Log in</a></li>
+              <li><a id='reg-btn' href='register.php'>Register</a></li>
+            ";
+          }else{
+            echo "<li class='links'><a class='btn-link3' href='phpFunctions/logout.php'><i class='fas fa-user-astronaut'></i></a></li>";
+
+            echo '
+            <li>
+            <a href="#" class="desktop-link">Features</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul class = "drop-down">
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li><a href="#">Drop Menu 4</a></li>
+            </ul>
+            </li>
+            ';
+          }
+          ?>      
         </ul>
         <div class="icon menu-btn">
           <i class="fab fa-mendeley"></i>

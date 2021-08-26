@@ -25,10 +25,18 @@
           <li class="links"><a class="btn-link1" href="index.php#cover-section">Home</a></li>
           <li class="links"><a  class="btn-link2" href="index.php#about-section">About us</a></li>
           <li class="links"><a class="btn-links" href="market_page.php">Gallery</a></li>
-          <li class="links"><a class="btn-link3" href="#contact-us">Contact Us</a></li>
-          <li><a id="log-in-btn" href="log_in.php">Log in</a></li>
-          <li><a id="reg-btn" href="register.php">Register</a></li>
-
+          <li class="links"><a class="btn-link3" href="index.php#contact-us">Contact Us</a></li>
+          <?php
+          session_start();
+          if(!ISSET($_SESSION['id'])){
+            echo"
+              <li><a id='log-in-btn' href='log_in.php'>Log in</a></li>
+              <li><a id='reg-btn' href='register.php'>Register</a></li>
+            ";
+          }else{
+            echo "<li class='links'><a class='btn-link3' href='phpFunctions/logout.php'><i class='fas fa-user-astronaut'></i></a></li>";
+          }
+          ?>    
         </ul>
         <div class="icon menu-btn">
           <i class="fab fa-mendeley"></i>
