@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Product Details</title>
+   <link rel="stylesheet" href="css product details/product-details.css">
+   <link rel="stylesheet" href="css product details/bid.css">
+   <link rel="stylesheet" href="css product details/check-verified.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+   <div class="product-details">
+     <div class="card">
+         <!-- card left -->
+         <div class="product-figures">
+            <div class="product-image">
+               <img src="images-folds/artwork-001.jpg" alt="shoe image" protected>
+            </div>   
+            <div class="product-description">
+               <h3>Description</h5>
+               <div class="desc-txt">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus placeat modi, perspiciatis, aut quos odit adipisci facere ipsa obcaecati autem vero temporibus deserunt recusandae fuga exercitationem officia ipsum voluptas? Est!</p>
+                  <br><br>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus consectetur odio impedit autem tempore at harum vel labore quasi eveniet, architecto, blanditiis error minima modi dolores aspernatur quo quidem.
+                  </p>
+                  <br><br>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus consectetur odio impedit autem tempore at harum vel labore quasi eveniet, architecto, blanditiis error minima modi dolores aspernatur quo quidem.
+                  </p>
+               </div>
+            </div>
+         
+            </div>
+         </div>
+       
+         <!-- card right -->
+         <div class="product-content">
+            <div class="product-title">Digital Omen</div>
+            <h3>Auction Ends</h3>
+            <div class="countdown-container">
+               <div class="countdown-el days-c">
+                  <p class="big-text" id="days">0</p>
+                  <span>Days</span>
+                </div>
+               <div class="countdown-el hours-c">
+                  <p class="big-text" id="hours">0</p>
+                  <span>Hours</span>
+               </div>
+               <div class="countdown-el mins-c">
+                  <p class="big-text" id="mins">0</p>
+                  <span>Mins</span>
+               </div>
+               <div class="countdown-el seconds-c">
+                  <p class="big-text" id="seconds">0</p>
+                  <span>Secs</span>
+               </div>
+            </div>
+
+            <p id="price-parag">Current Bid</p>
+            <p class="product-price"><i class="fab fa-gg"></i> <span id="alp-price">5&nbsp;0&nbsp;</span>A&nbsp;L&nbsp;P&nbsp;<span id="usd-price">= $ 198.88</span></p>
+
+            <button class="button-buy" id="buy-button">Buy now</button n>
+               
+
+            <div class="product-list">
+               
+               <div class="bid-title">Bid History</div>
+               <!--
+               <ul>
+                  <li> <i class="fas fa-circle"></i> <span>Listed by</span> @supermood</li>
+                  <p class="bid-time">2021-08-20 22:16:12</p>
+                  <li> <i class="fas fa-circle"></i> <span>Listed by</span> @tagryze</li>
+                  <p class="bid-time">2021-08-20 23:16:12</p>
+                  <li> <i class="fas fa-circle"></i> <span>Listed by</span> @maki</li>
+                  <p class="bid-time">2021-08-20 23:19:14</p>
+               </ul>
+               -->
+               </div>
+            </div>
+      </div>
+
+   </div>
+   
+      <!-- Modal Confirmation payment -->
+
+
+      <div class="buy-modal">
+         <div class="buy-container">
+           <div class="buy-head">
+             <p class="label">Buy with Your Credit/Debit Card</p>
+             <span tabIndex="0" class="close"><i class="fas fa-times"></i></span>
+           </div>
+           <div class="buy-spend" tabindex="0">
+             <p class="input-text">Spend</p>
+             <div class="spend-input">
+               <input id="deposit-amount" type="number" name="amount" maxlength="8" placeholder="> current bid">
+               <div class="currency">
+                 <div><i class="icon-2 fab fa-gg"></i></div>
+                 <span>ALP</span>
+               </div>
+             </div>
+           </div>
+           <p class="error-message"></p>
+           <p class="error-message2"></p>
+           
+           <div class="buy-receive" tabindex="0">
+             <p class="input-text">Receive</p>
+             <div class="receive-input">
+               <input id="receive-amount" type="number" name="amount" maxlength="10" placeholder="0.00">
+               <div class="currency">
+                 <div><i class="icon-2 fab fa-gg"></i></div>
+                 <span>ALP</span>
+               </div>
+             </div>
+           </div>
+           
+           <input id="buy-submit" type="button" value="Continue">
+         </div>
+         <div class="confirm-container">
+           <div class="confirm-head">
+             <span tabIndex="0" class="back"><i class="fas fa-chevron-left"></i></span>
+             <p class="label">Pay with Credit/Debit Card</p>
+             <span tabIndex="0" class="close"><i class="fas fa-times"></i></span>
+           </div>
+           <div class="confirm-summary">
+             <div class="summary-cont">
+               <div class="spend">
+                 <div class="currency">
+                   <div><i class="icon-2 fab fa-gg"></i></div>
+                   <span>ALP</span>
+                 </div>
+                 <p class="alp-val"></p>
+               </div>
+               <i class="equal fas fa-equals"></i>
+               <div class="receive">
+                 
+                 <div class="currency">
+                   <div><i class="icon fas fa-dollar-sign"></i></div>
+                   <span>USD</span>
+                 </div>
+                 <p class="usd-val"></p>
+               </div>
+             </div>
+           </div>
+           <input id="confirm-submit" type="submit" value="Continue">
+         </div>
+         <div class="verification">
+           <div class="verification-head">
+             <p class="label">Please Wait...</p>
+           </div>
+           <div class="check-container">
+             <input type="checkbox" id="check">
+             <label for="check">
+                <div class="check-icon"></div>
+             </label>
+           </div>
+           <input id="close-button" type="button" value="Close">
+         </div>
+       </div>
+
+
+   <script type="text/javascript"src="js product details/bid.js"></script>
+   <script  src="js product details/countdown.js"></script>
+</body>
+</html>
