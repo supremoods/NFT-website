@@ -151,9 +151,12 @@ body {
   position: relative;
 }
 
+.child_1{
+  padding-left: 4em;
+}
+.child_1 i {
+  font-size: 1.9em;
 
-.child_2{
-  display: none;
 }
 .icon {
   color: var(--dark-blue-alt);
