@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include("phpFunctions/loginFunc.php");
 ?>
 <!DOCTYPE html>
@@ -9,8 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/Log_In.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/nav.css">
-  <script type="text/javascript" src="assets/js/account.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/nav.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/toast.css">
+	<script type="text/javascript" src="assets/js/account.js"></script>
 </head>
 
 <body>
@@ -52,7 +53,7 @@
         </div>
       </form>
     </div>
-    
+
   </div>
 
   <section class="footer">
@@ -76,27 +77,7 @@
   </section>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
-    <script>
-    
-var modal = document.getElementById("myModal");
-
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-  </script>
+	<script type="text/javascript" src="assets/js/toast.js"></script>
 </body>
 
 </html>
