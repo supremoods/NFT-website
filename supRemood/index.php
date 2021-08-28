@@ -63,40 +63,44 @@
       <!-- fade css -->
       <div class="myslide fade">
         <div class="txt">
-          <h1>NFT Art Market</h1>
-          <p>Discover and Collect rare digital artwork</p>
+          <h1>ALPAS</h1>
+          <p>Let your imagination free</p>
+          <div class="btn-explore">
+          <button>EXPLORE</button>
+          </div>
         </div>
-        <img class="slide-img" src="images/img.jpg" style="width: 200vh; height: 120vh;">
-      </div>
-
-      <div class="myslide fade">
-        <div class="txt-2">
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            iste cupiditate impedit alias animi ab eius laudantium, maiores
-            fugit sint perspiciatis sit perferendis nesciunt accusamus
-            repellat? Minus molestias obcaecati mollitia!</p>
-        </div>
-        <img class="slide-img" src="images/img2.jpg" style="width: 200vh; height: 120vh;">
+        <img class="slide-img" src="images/slide1.jpg" style="width: 200vh; height: 120vh;">
       </div>
 
       <div class="myslide fade">
         <div class="txt">
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore</p>
+          <h1 c;a>NFT Art Market</h1>
+          <p>Discover and Collect rare digital artwork</p>
+          <div class="btn-explore">
+          <button>EXPLORE</button>
+          </div>
         </div>
-        <img class="slide-img" src="images/img3.jpg" style="width: 200vh; height: 120vh;">
+        <img class="slide-img" src="images/slide2.jpg" style="width: 200vh; height: 120vh;">
       </div>
 
       <div class="myslide fade">
-        <div class="txt-4">
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            iste cupiditate impedit alias animi ab eius laudantium, maiores
-            fugit sint perspiciatis sit perferendis nesciunt accusamus
-            repellat? Minus molestias obcaecati mollitia!</p>
+        <div class="txt">
+          <h1 class="txt-2">Creativity St<span>ARTS</span> Here</h1>
+          <div class="btn-explore">
+          <button>EXPLORE</button>
+          </div>
         </div>
-        <img class="slide-img" src="images/img4.jpg" style="width: 200vh; height: 120vh;">
+        <img class="slide-img" src="images/slide4.jpg" style="width: 200vh; height: 120vh;">
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>Be a Collector</h1>
+          <div class="btn-explore">
+          <button>EXPLORE</button>
+          </div>
+        </div>
+        <img class="slide-img" src="images/slide5.jpg" style="width: 200vh; height: 120vh;">
       </div>
 
 
