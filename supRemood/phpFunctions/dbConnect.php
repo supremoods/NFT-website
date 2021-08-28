@@ -7,10 +7,10 @@
     $conn = mysqli_connect($server, $username, $password, $dbName);
     
     if(mysqli_connect_errno()){
-       // echo "Database not Connected";
+      // echo "Database not Connected";
         exit();
     }else{
-      //  echo "Congrats Motherfucker";
+      // echo "Congrats Motherfucker";
     }
     
 ?>
