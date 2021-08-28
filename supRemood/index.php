@@ -37,13 +37,13 @@
           }else{
             echo '
             <li>
-            <a href="#" class="desktop-link child_1"><i class="fas fa-user-astronaut"></i></a>
+            <a href="manageAccount.php" class="desktop-link child_1"><i class="fas fa-user-astronaut"></i></a>
             <input type="checkbox" id="show-features">
             <ul class = "drop-down">
-              <li><a href="#">Account Details</a></li>
-              <li><a href="#">Orders</a></li>
-              <li><a href="#">NFT</a></li>
-              <li><a href="#">Available Balance</a></li>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Sell Arts</a></li>
+              <li><a href="#">Order</a></li>
+              <li><a href="#">Collections</a></li>
               <li><a class="btn-link3" href="phpFunctions/logout.php">Logout</a></li>
             </ul>
             </li>

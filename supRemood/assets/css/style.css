@@ -310,12 +310,15 @@ h1 {
     display: none;
   }
 
- 
+  .child_1{
+    padding-left: 0;
+  }
   .child_1 i{
     background-color: var(--light-gray-alt);
     color: var(--dark-blue-alt);
     border-radius: 50%;
-    padding: 20px;
+    padding: 15px;
+    font-size: 20px;
     transition: all .3s ease;
   }
   .child_1 i:hover{
