@@ -13,10 +13,14 @@
     <form class="form">
       <br><br>
       <div class="pass">
-        <label> New Password </label><br><br>
-        <input class="textplace" id="password" type="password" placeholder="Password" required>
-        <br><br><br>
-        <label> Re-enter Password </label><br><br>
+        <br><br>
+        <label> Email</label><br>
+        <input class="textplace" id="password" type="email" placeholder="email" required>
+        <br><br>
+        <label> New Password</label><br>
+        <input class="textplace" id="password" type="password" placeholder=" password" required>
+        <br><br>
+        <label> Re-enter Password</label><br>
         <input class="textplace" id="co_password" type="password" placeholder="Re-enter password" required><br>
         <button id="submit-button" class="button">Confirm</button>
       </div>
