@@ -95,7 +95,6 @@
   <?php 
     include("phpFunctions/registerFunc.php");
   ?>
-  <script>
 </body>
 
 </html>

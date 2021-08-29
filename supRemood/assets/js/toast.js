@@ -5,7 +5,6 @@ $(function () {
   let timer;
   $('.toast').hide();
 
-  var userName = '<?=echo $checkUsername?>';
   if(url == '/log_in.php')
     $('.toast-message').text('Account doesn\'t exist');
 
