@@ -39,7 +39,7 @@ body {
   z-index: 5;
   width: 100%;
   padding: 10px 0;
-
+  transition: all 0.2s ease;
   /* background-color: #f0f2f7f3; */
 }
 .nav-bar.sticky {
@@ -51,23 +51,6 @@ body {
 }
 
 
-@-webkit-keyframes navfade {
-  from {
-    opacity: 0.8;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes navfade {
-  from {
-    opacity: 0.8;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .nav-bar.sticky .menu-list li a {
   color: var(--light-gray-alt);
 }
@@ -627,6 +610,13 @@ h1 {
   margin-left: -0.7em;
   font-size: 18px;
   padding: 4px 17px 4px 17px;
+  transition: all ease-in-out .4s;
+}
+.txt .btn-explore button:hover {
+  background: #2223288e;
+  border: none;
+  color: var(--aqua-alt);
+  transition: all ease-in-out .4s;
 }
 .txt .txt-2 {
   font-size: 3em;

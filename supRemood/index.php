@@ -66,7 +66,7 @@
           <h1>ALPAS</h1>
           <p>Let your imagination free</p>
           <div class="btn-explore">
-          <button>EXPLORE</button>
+          <button class="btn-exp">EXPLORE</button>
           </div>
         </div>
         <img class="slide-img" src="images/slide1.jpg" style="width: 200vh; height: 120vh;">
@@ -77,7 +77,7 @@
           <h1 c;a>NFT Art Market</h1>
           <p>Discover and Collect rare digital artwork</p>
           <div class="btn-explore">
-          <button>EXPLORE</button>
+          <button class="btn-exp1">EXPLORE</button>
           </div>
         </div>
         <img class="slide-img" src="images/slide2.jpg" style="width: 200vh; height: 120vh;">
@@ -87,7 +87,7 @@
         <div class="txt">
           <h1 class="txt-2">Creativity St<span>ARTS</span> Here</h1>
           <div class="btn-explore">
-          <button>EXPLORE</button>
+          <button class="btn-exp2">EXPLORE</button>
           </div>
         </div>
         <img class="slide-img" src="images/slide4.jpg" style="width: 200vh; height: 120vh;">
@@ -97,7 +97,7 @@
         <div class="txt">
           <h1>Be a Collector</h1>
           <div class="btn-explore">
-          <button>EXPLORE</button>
+          <button class="btn-exp3">EXPLORE</button>
           </div>
         </div>
         <img class="slide-img" src="images/slide5.jpg" style="width: 200vh; height: 120vh;">
@@ -238,7 +238,7 @@
       ALPAS @ 2021
     </p>
   </section>
-
+  <script src="assets/js/carousel.js"></script>
   <script src="assets/js/script.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

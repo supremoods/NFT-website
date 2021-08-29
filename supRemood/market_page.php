@@ -36,7 +36,7 @@
           }else{
             echo '
             <li>
-            <a href="#" class="desktop-link child_1"><i class="fas fa-user-astronaut"></i></a>
+            <a href="manageAccount.php" class="desktop-link child_1"><i class="fas fa-user-astronaut"></i></a>
             <input type="checkbox" id="show-features">
             <ul class = "drop-down">
             <li><a href="#">Account</a></li>
@@ -222,12 +222,17 @@
       digitrad @ 2021
     </p>
   </section>
-
-</body>
-<script src="assets/js/script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <!-- PROTECT IMAGE -->
-<script src="https://cdn.jsdelivr.net/gh/ColonelParrot/ProtectImage.js@v1.2/src/ProtectImage.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ColonelParrot/ProtectImage.js@v1.2/src/ProtectImage.min.js">
+window.onload = function() {
+  ProtectImageJS.protect(ProtectImageJS.getLabelledImages())
+}
+</script>
+</body>
+
+
 
 </html>
