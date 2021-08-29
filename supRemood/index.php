@@ -125,7 +125,11 @@
   </div>
 
   <div id="gallery-section" class="gallery">
+   
     <div class="app">
+       <div class="feat-txt">
+      <h1>Featured Art</h1>
+    </div>
       <div class="cardList">
         <button class="cardList__btn btn btn--left">
           <i style="color: #fff; font-size: 2em;" class="fas fa-angle-left"></i>
@@ -141,9 +145,19 @@
               <img class="img-feat" src="images/2.png" alt="" />
             </div>
           </div>
+          <div class="card next--next--card">
+            <div class="card__image">
+              <img class="img-feat" src="images/4.jpg" alt="" />
+            </div>
+          </div>
           <div class="card previous--card">
             <div class="card__image">
               <img class="img-feat" src="images/3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card previous--previous--card">
+            <div class="card__image">
+              <img class="img-feat" src="images/5.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -164,9 +178,19 @@
             <h4 class="text location">Aris Jerome</h4>
             <p class="text description">creator</p>
           </div>
+          <div class="info next--next--info">
+            <h1 class="text name">Alisa </h1>
+            <h4 class="text location">Kumography</h4>
+            <p class="text description">creator</p>
+          </div>
           <div class="info previous--info">
             <h1 class="text name">Barbara </h1>
             <h4 class="text location">Razaras</h4>
+            <p class="text description">creator</p>
+          </div>
+          <div class="info previous--previous--info">
+            <h1 class="text name">Some day</h1>
+            <h4 class="text location">Kerantenita</h4>
             <p class="text description">creator</p>
           </div>
         </div>
@@ -179,8 +203,14 @@
         <div class="app__bg__image next--image">
           <img class="img-feat" src="images/2.png" alt="" />
         </div>
+        <div class="app__bg__image next--next--image">
+          <img class="img-feat" src="images/4.jpg" alt="" />
+        </div>
         <div class="app__bg__image previous--image">
           <img class="img-feat" src="images/3.jpg" alt="" />
+        </div>
+        <div class="app__bg__image previous--previous--image">
+          <img class="img-feat" src="images/5.jpg" alt="" />
         </div>
       </div>
       <div class="loading__wrapper">

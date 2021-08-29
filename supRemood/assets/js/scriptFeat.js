@@ -18,11 +18,15 @@ buttons.prev.addEventListener("click", () => swapCards("left"));
 function swapCards(direction) {
 	const currentCardEl = cardsContainerEl.querySelector(".current--card");
 	const previousCardEl = cardsContainerEl.querySelector(".previous--card");
+	const previous_previous_CardEl = cardsContainerEl.querySelector(".previous--previous--card");
 	const nextCardEl = cardsContainerEl.querySelector(".next--card");
+	const next_next_CardEl = cardsContainerEl.querySelector(".next--next--card");
 
 	const currentBgImageEl = appBgContainerEl.querySelector(".current--image");
 	const previousBgImageEl = appBgContainerEl.querySelector(".previous--image");
+	const previous_previousBgImageEl = appBgContainerEl.querySelector(".previous--previous--image");
 	const nextBgImageEl = appBgContainerEl.querySelector(".next--image");
+	const next_nextBgImageEl = appBgContainerEl.querySelector(".next--next--image");
 
 	changeInfo(direction);
 	swapCardsClass();
@@ -32,41 +36,58 @@ function swapCards(direction) {
 	function swapCardsClass() {
 		currentCardEl.classList.remove("current--card");
 		previousCardEl.classList.remove("previous--card");
+		previous_previous_CardEl.classList.remove("previous--previous--card");
 		nextCardEl.classList.remove("next--card");
+		next_next_CardEl.classList.remove("next--next--card");
 
 		currentBgImageEl.classList.remove("current--image");
 		previousBgImageEl.classList.remove("previous--image");
+		previous_previousBgImageEl.classList.remove("previous--previous--image");
 		nextBgImageEl.classList.remove("next--image");
+		next_nextBgImageEl.classList.remove("next--next--image");
 
 		currentCardEl.style.zIndex = "50";
 		currentBgImageEl.style.zIndex = "-2";
 
 		if (direction === "right") {
 			previousCardEl.style.zIndex = "20";
+			previous_previous_CardEl.style.zIndex = "0";
 			nextCardEl.style.zIndex = "30";
+			next_next_CardEl.style.zIndex = "0";
 
 			nextBgImageEl.style.zIndex = "-1";
+			next_nextBgImageEl.style.zIndex = "0";
 
 			currentCardEl.classList.add("previous--card");
-			previousCardEl.classList.add("next--card");
+			previousCardEl.classList.add("previous--previous--card");
+			previous_previous_CardEl.classList.add("next--next--card");
 			nextCardEl.classList.add("current--card");
+			next_next_CardEl.classList.add("next--card");
 
 			currentBgImageEl.classList.add("previous--image");
-			previousBgImageEl.classList.add("next--image");
+			previousBgImageEl.classList.add("previous--previous--image");
+			previous_previousBgImageEl.classList.add("next--next--image");
 			nextBgImageEl.classList.add("current--image");
+			next_nextBgImageEl.classList.add("next--image");
+
 		} else if (direction === "left") {
 			previousCardEl.style.zIndex = "30";
 			nextCardEl.style.zIndex = "20";
 
 			previousBgImageEl.style.zIndex = "-1";
+			previous_previousBgImageEl.style.zIndex = "-2";
 
 			currentCardEl.classList.add("next--card");
 			previousCardEl.classList.add("current--card");
-			nextCardEl.classList.add("previous--card");
+			previous_previous_CardEl.classList.add("previous--card");
+			nextCardEl.classList.add("next--next--card");
+			next_next_CardEl.classList.add("previous--previous--card");
 
 			currentBgImageEl.classList.add("next--image");
 			previousBgImageEl.classList.add("current--image");
-			nextBgImageEl.classList.add("previous--image");
+			previous_previousBgImageEl.classList.add("previous--image");
+			nextBgImageEl.classList.add("next--next--image");
+			next_nextBgImageEl.classList.add("previous--previous--image");
 		}
 	}
 }
@@ -74,7 +95,9 @@ function swapCards(direction) {
 function changeInfo(direction) {
 	let currentInfoEl = cardInfosContainerEl.querySelector(".current--info");
 	let previousInfoEl = cardInfosContainerEl.querySelector(".previous--info");
+	let previous_previousInfoEl = cardInfosContainerEl.querySelector(".previous--previous--info");
 	let nextInfoEl = cardInfosContainerEl.querySelector(".next--info");
+	let next_nextInfoEl = cardInfosContainerEl.querySelector(".next--next--info");
 
 	gsap.timeline()
 		.to([buttons.prev, buttons.next], {
@@ -120,16 +143,22 @@ function changeInfo(direction) {
 	function swapInfosClass() {
 		currentInfoEl.classList.remove("current--info");
 		previousInfoEl.classList.remove("previous--info");
+		previous_previousInfoEl.classList.remove("previous--previous--info");
 		nextInfoEl.classList.remove("next--info");
+		next_nextInfoEl.classList.remove("next--next--info");
 
 		if (direction === "right") {
 			currentInfoEl.classList.add("previous--info");
 			nextInfoEl.classList.add("current--info");
-			previousInfoEl.classList.add("next--info");
-		} else if (direction === "left") {
+			previousInfoEl.classList.add("previous--previous--info");
+			previous_previousInfoEl.classList.add("next--next--info");
+			next_nextInfoEl.classList.add("next--info")
+		} else if (direction === "left") {	
 			currentInfoEl.classList.add("next--info");
-			nextInfoEl.classList.add("previous--info");
+			nextInfoEl.classList.add("next--next--info");
+			next_nextInfoEl.classList.add("previous--previous--info")
 			previousInfoEl.classList.add("current--info");
+			previous_previousInfoEl.classList.add("previous--info");
 		}
 	}
 }
