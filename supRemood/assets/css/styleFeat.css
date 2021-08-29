@@ -203,11 +203,14 @@ button:focus {
   transition: opacity, height var(--card-transition-duration) 
     var(--card-transition-easing);
   opacity: calc(1 - var(--opacity));
+ 
 }
 .card__image {
   position: relative;
   width: 100%;
   height: 100%;
+  
+
 }
 .card__image .img-feat {
   position: absolute;
@@ -216,7 +219,9 @@ button:focus {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
+
 .card.current--card {
   --current-card-rotation-offset: 0;
   --card-translateX-offset: 0;
@@ -227,21 +232,24 @@ button:focus {
 .card.previous--card {
   --card-translateX-offset: calc(-1 * var(--card-width) * 1.1);
   --card-rotation-offset: -19deg;
+
 }
 .card.previous--previous--card {
   --card-translateX-offset: calc(-1.67 * var(--card-width) * 1.1);
   --card-rotation-offset: -35deg;
-  --card-height: 320px;
+
+ 
 }
 
 .card.next--card {
   --card-translateX-offset: calc(var(--card-width) * 1.1);
   --card-rotation-offset: 19deg;
+ 
 }
 .card.next--next--card {
   --card-translateX-offset: calc(1.67 * var(--card-width) * 1.1);
   --card-rotation-offset: 35deg;
-  --card-height: 320px;
+
 }
 .card.previous--previous--card,
 .card.previous--card,
@@ -250,6 +258,13 @@ button:focus {
   --card-scale-offset: 0.9;
   --opacity: 0.4;
 }
+
+.card.previous--previous--card,
+.card.next--next--card{
+  --card-scale-offset: 0.8;
+  --opacity: 0.4;
+}
+
 
 .infoList {
   position: absolute;
@@ -380,8 +395,8 @@ button:focus {
   
 .card.previous--card {
   --card-translateX-offset: calc(-1 * var(--card-width) * 1.1);
-
 }
+
 .card.previous--previous--card {
   --card-translateX-offset: calc(-.5 * var(--card-width) * 1.1);
   z-index: -1;
@@ -390,7 +405,7 @@ button:focus {
 
 .card.next--card {
   --card-translateX-offset: calc(var(--card-width) * 1.1);
-   
+
 }
 .card.next--next--card {
   --card-translateX-offset: calc(.5 * var(--card-width) * 1.1);

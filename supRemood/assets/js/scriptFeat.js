@@ -50,10 +50,10 @@ function swapCards(direction) {
 		currentBgImageEl.style.zIndex = "-2";
 
 		if (direction === "right") {
-			previousCardEl.style.zIndex = "20";
-			previous_previous_CardEl.style.zIndex = "0";
-			nextCardEl.style.zIndex = "30";
-			next_next_CardEl.style.zIndex = "0";
+			previousCardEl.style.zIndex = "30";
+			previous_previous_CardEl.style.zIndex = "20";
+			nextCardEl.style.zIndex = "40";
+			next_next_CardEl.style.zIndex = "30";
 
 			nextBgImageEl.style.zIndex = "-1";
 			next_nextBgImageEl.style.zIndex = "0";
@@ -71,8 +71,10 @@ function swapCards(direction) {
 			next_nextBgImageEl.classList.add("next--image");
 
 		} else if (direction === "left") {
-			previousCardEl.style.zIndex = "30";
-			nextCardEl.style.zIndex = "20";
+			previousCardEl.style.zIndex = "40";
+			previous_previous_CardEl.style.zIndex = "30";
+			nextCardEl.style.zIndex = "30";
+			next_next_CardEl.style.zIndex = "20";
 
 			previousBgImageEl.style.zIndex = "-1";
 			previous_previousBgImageEl.style.zIndex = "-2";
