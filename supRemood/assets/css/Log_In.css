@@ -66,14 +66,16 @@
   padding-left: 16px;
   padding-top: 10px;
 }
+
 .form {
   display: block;
+  width: fit-content;
+  margin: auto;
   padding-top: 5px;
-  margin-left: 63px;
-  margin-right: auto;
 }
+
 .textplace {
-  width: 80%;
+  width: -webkit-fill-available;
   margin-bottom: 20px;
   padding: 10px 10px 10px 25px;
   border: 1px solid white;

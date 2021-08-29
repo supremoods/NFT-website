@@ -1,10 +1,14 @@
 $(function () {
   const progressToast = $('#toast-progress');
-
-  var toast = $("#toast-id");
+  let url = window.location.pathname;
+  const toast = $("#toast-id");
   let timer;
   $('.toast').hide();
-  $('.toast-message').text('Account doesn\'t exist');
+
+  var userName = '<?=echo $checkUsername?>';
+  if(url == '/log_in.php')
+    $('.toast-message').text('Account doesn\'t exist');
+
   progressToast.css('width', '100%');
   $('.toast').slideDown('fast');
   for (let i = 100; i > 0; i--){

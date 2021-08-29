@@ -47,8 +47,8 @@
             <i class="fas fa-unlock-alt icon-1"></i>
             <input class="textplace" name="password" type="password" placeholder="Password" /required>
           </div>
-          <a href="forgot.html" class="btnForgetPwd">Forgot Password?</a>
-          <a href="create.html" class="donthaveacc">Register here</a><br>
+          <a href="forgot.php" class="btnForgetPwd">Forgot Password?</a>
+          <a href="register.php" class="donthaveacc">Register here</a><br>
           <button name="submit" class="button">Login</button><br>
         </div>
       </form>

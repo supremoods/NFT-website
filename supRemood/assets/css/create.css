@@ -39,7 +39,8 @@ body {
 }
 
 .registerhead1 {
-  padding-left: 5em;
+  text-align: center;
+  margin: auto;
 }
 
 .registerhead1 i {
@@ -74,7 +75,9 @@ label {
 
 .RegisterButton {
   text-align: center;
+  width: -webkit-fill-available;
 }
+
 .center {
   display: block;
   margin-top: 45px;
@@ -86,13 +89,13 @@ label {
 }
 
 input[type=submit] {
+
   margin-top: 15px;
   background-color: #2a405b;
   border: 2px solid white;
   border-radius: 15px;
-  padding: 4px;
+  padding: 4px 50px;
   color: white;
-  width: 150px;
 }
 
 button[type=submit]:hover {

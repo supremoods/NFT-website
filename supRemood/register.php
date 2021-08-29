@@ -1,13 +1,12 @@
-<?php 
-	include("phpFunctions/registerFunc.php");
-?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/create.css" />
+  <link rel="stylesheet" href="assets/css/create.css">
   <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/toast.css">
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -41,7 +40,7 @@
         <img src="photo1629544662-removebg-preview.png" class="center">
       </div>
 
-      <form class=registerhead1 method="post">
+      <form class="registerhead1" method="post">
 
         <i class="fa fa-user "></i>
         <input class="textbox" type="text" name="username" id="username" placeholder="Username " required /><br>
@@ -60,10 +59,10 @@
         <input class="textbox" type="password" name="co_password" id="co_password" placeholder="Confirm Password " required />
         <i class="toggleView-2 far fa-eye-slash" id="togglePassword"></i><br>
 
-        <a href="Log In.html" class="haveacc">Already have an account?</a>
+        <a href="log_in.php" class="haveacc">Already have an account? Log in instead.</a>
         <div class="RegisterButton">
-        <input id="submit-button" type="submit" value="Register" name="submit"></input>
-      </div>
+         <input id="submit-button" type="submit" value="Register" name="submit"></input>
+        </div>
       </form>
 
 
@@ -92,27 +91,11 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/account.js"></script>
   <script src="assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/toast.js"></script>
+  <?php 
+    include("phpFunctions/registerFunc.php");
+  ?>
   <script>
-    
-var modal = document.getElementById("myModal");
-
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-  </script>
 </body>
 
 </html>

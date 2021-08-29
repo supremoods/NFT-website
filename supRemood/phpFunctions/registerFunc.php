@@ -13,26 +13,51 @@
             $checkUsername = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM `user` WHERE `username` = '$username'"));
             $checkEmail = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM `user` WHERE `email` = '$email'"));
 
-            if($checkUsername == 1){
-                echo "
-                    <div id='myModal' class='modal'>
-                        <!-- Modal content -->
-                        <div class='modal-content'>
-                            <span class='close'>&times;</span>
-                            <p>username already exist</p>
+            if($checkUsername == 1 || $checkEmail == 1){
+                echo '
+                <div id="toast-id">
+                  <div class="toast">
+                    <div class="toast-container">
+                      <div class="toast-content">
+                        <div class="toast-icon">
+                          <i class="fas fa-exclamation"></i>
                         </div>
+                        <p class="toast-message"></p>
+                      </div>
+                      <div class="toast-dismiss">
+                        <i class="fas fa-times"></i>
+                      </div>
                     </div>
-                ";	 
-            }elseif($checkEmail == 1){
-                echo "
-                    <div id='myModal' class='modal'>
-                        <!-- Modal content -->
-                        <div class='modal-content'>
-                            <span class='close'>&times;</span>
-                            <p>email already exist</p>
-                        </div>
-                    </div>                  
-                ";
+                    <div id="toast-progress"></div>
+                  </div>
+                </div>
+              ';
+              if ($checkEmail == 1 && $checkUsername == 1){
+                echo '
+                  <script>
+                  $(function () {
+                    $(".toast-message").text("Username and Email is already taken.");
+                  });
+                  </script>
+                ';
+              } elseif ($checkUsername == 1 && $checkEmail == 0){
+                echo '
+                <script>
+                  $(function () {
+                    $(".toast-message").text("Username is already taken");
+                  });
+                </script>
+                ';
+              } else {
+                echo '
+                  <script>
+                    $(function () {
+                      $(".toast-message").text("Email is already taken");
+                    });
+                  </script>
+                ';
+              }
+            
             }else{
                 
                 $query = "INSERT INTO user(userID,username,email,password) VALUES(NULL,'$username','$email','$password')";
