@@ -84,7 +84,7 @@
               alt="sample image">
           </div>
           <div class="artwork-description">
-            <h6><b> PORTRAIT </b></h6>
+            <h6> PORTRAIT </h6>
             <div class="line">
               <p>Current bid</p>
               <div class="bid-price">
@@ -93,7 +93,7 @@
               </div>
             </div>
             <div class="line w-price">
-              <p class="price"><b> = PHP 1,000.00 </b></p>
+              <p class="price">= PHP 1,000.00</p>
             </div>
             <div class="line creator">
               <p class="p-content"> Creator </p>
@@ -108,7 +108,7 @@
           <img protected class="thumbnail" src="images/103565282_2930085473776742_4986999794956651481_o.jpg"
             alt="sample image">
           <div class="artwork-description">
-            <h6><b> PORTRAIT </b></h6>
+            <h6>PORTRAIT </h6>
             <div class="line">
               <p>Current bid</p>
               <div class="bid-price">
@@ -117,7 +117,7 @@
               </div>
             </div>
             <div class="line w-price">
-              <p class="price"><b> = PHP 1,000.00 </b></p>
+              <p class="price">= PHP 1,000.00</p>
             </div>
             <div class="line creator">
               <p class="p-content"> Creator </p>
@@ -133,7 +133,7 @@
           <img protected class="thumbnail" src="images/103565282_2930085473776742_4986999794956651481_o.jpg"
             alt="sample image">
           <div class="artwork-description">
-            <h6><b> PORTRAIT </b></h6>
+            <h6>PORTRAIT </h6>
             <div class="line">
               <p>Current bid</p>
               <div class="bid-price">
@@ -142,7 +142,7 @@
               </div>
             </div>
             <div class="line w-price">
-              <p class="price"><b> = PHP 1,000.00 </b></p>
+              <p class="price">= PHP 1,000.00</p>
             </div>
             <div class="line creator">
               <p class="p-content"> Creator </p>
@@ -157,7 +157,7 @@
           <img protected class="thumbnail" src="images\101913208_2933299430122013_2989485938663813675_o.jpg"
             alt="sample image">
           <div class="artwork-description">
-            <h6><b> PORTRAIT </b></h6>
+            <h6>PORTRAIT </h6>
             <div class="line">
               <p>Current bid</p>
               <div class="bid-price">
@@ -166,7 +166,7 @@
               </div>
             </div>
             <div class="line w-price">
-              <p class="price"><b> = PHP 1,000.00 </b></p>
+              <p class="price">= PHP 1,000.00</p>
             </div>
             <div class="line creator">
               <p class="p-content"> Creator </p>
@@ -181,7 +181,7 @@
           <img protected class="thumbnail" src="images\101913208_2933299430122013_2989485938663813675_o.jpg"
             alt="sample image">
           <div class="artwork-description">
-            <h6><b> PORTRAIT </b></h6>
+            <h6>PORTRAIT </h6>
             <div class="line">
               <p>Current bid</p>
               <div class="bid-price">
@@ -190,7 +190,7 @@
               </div>
             </div>
             <div class="line w-price">
-              <p class="price"><b> = PHP 1,000.00 </b></p>
+              <p class="price">= PHP 1,000.00</p>
             </div>
             <div class="line creator">
               <p class="p-content"> Creator </p>
@@ -227,7 +227,9 @@
 
 <!-- PROTECT IMAGE -->
 <script src="https://cdn.jsdelivr.net/gh/ColonelParrot/ProtectImage.js@v1.2/src/ProtectImage.min.js">
-window.onload = function() {
+</script>
+<script>
+  window.onload = function() {
   ProtectImageJS.protect(ProtectImageJS.getLabelledImages())
 }
 </script>
