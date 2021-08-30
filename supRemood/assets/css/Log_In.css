@@ -20,41 +20,53 @@
   --yellow: #f3d351;
   --yellow-alt: #ebc63b;
   --aqua: #51dde9;
-
   --aqua-alt: #04f3fc;
 }
 
 .container {
   height: 100vh;
-  color: #005ac9;
+  color: var(--aqua);
+  background-image: url(slide1.jpg);
   font-family: "monserrat", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.container::before{
+  content: "";
+  background-color: #222328b2;
+  position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+}
 
 .loginbody {
   width: 410px;
-  height: 470px;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1b1bb0;
   border: none;
-  border-radius: 20px;
-  box-shadow: 0 0 10px 2px #3333331a;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(2px 2px 5px rgba(34, 34, 34, 0.555));
+  filter: drop-shadow(2px 2px 5px rgba(34, 34, 34, 0.555));
 }
 
-.loginbody h1 {
-  padding-top: 25px;
-  font-size: 30px;
-  text-align: center;
-}
 
 .center {
   display: block;
-  margin-top: 45px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  width: 120px;
-  height: 100px;
+  width: 220px;
+  height: 220px;
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
 }
 
 .iconId i {
@@ -78,10 +90,11 @@
   width: -webkit-fill-available;
   margin-bottom: 20px;
   padding: 10px 10px 10px 25px;
-  border: 1px solid white;
+  border: none;
   border-radius: 7px;
   text-align: left;
   text-indent: 8px;
+  background-color: var(--light-gray-alt);
   border-color: #2a405b30;
   font-weight: 300;
   color: #2a405b;
@@ -93,7 +106,7 @@ input:focus {
   background: #2a405b21;
 }
 .btnForgetPwd {
-  color: black;
+  color: var(--light-gray-alt);
   font-size: 13px;
   font-weight: 300;
   text-decoration: none;
@@ -101,11 +114,11 @@ input:focus {
 .btnForgetPwd:hover,
 .donthaveacc:hover {
   opacity: 0.7;
-  color: #2a405b;
+  color: var(--aqua-alt);
 }
 .donthaveacc {
   float: center;
-  color: black;
+  color: var(--light-gray-alt);
   font-size: 13px;
   font-weight: 300;
   text-decoration: none;
@@ -114,17 +127,19 @@ input:focus {
 
 .button {
   margin-top: 25px;
-  margin-left: 62px;
-  background-color: #2a355b;
-  border: 2px solid white;
+  cursor: pointer;
+  background-color:var(--aqua);
   border-radius: 15px;
-  padding: 4px;
-  color: white;
+  border: none;
+  padding: 10px;
+  color:var(--dark-blue-alt);
   width: 150px;
+  transition: background 0.3s;
 }
 .button:hover {
-  background-color: #4e62a8;
-  color: white;
+  background-color: var(--aqua-alt);
+  color: var(--dark-blue-alt);
+  transition: background 0.3s;
 }
 
 .footer {

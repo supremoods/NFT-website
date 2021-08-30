@@ -1,3 +1,7 @@
+window.onscroll = ()=>{
+	this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+  
 const body = document.querySelector("body");
 const navbar = document.querySelector(".nav-bar");
 const menu = document.querySelector(".menu-list");
@@ -47,8 +51,6 @@ link3.onclick = ()=>{
 }
 
 
-window.onscroll = ()=>{
-  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-}
 
 
+  

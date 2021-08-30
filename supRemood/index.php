@@ -17,7 +17,7 @@
   <div class="header">
     <nav class="nav-bar">
       <div class="content">
-        <div class="logo"><a href="#">ALPAS</a></div>
+        <div class="logo"><a href="#"><img src="images/logo.png" alt=""><p>ALPAS</p></a></div>
         <ul class="menu-list">
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
@@ -63,6 +63,9 @@
       <!-- fade css -->
       <div class="myslide fade">
         <div class="txt">
+          <center>
+          <img src="images/logo.png" alt="">
+          </center>
           <h1>ALPAS</h1>
           <p>Let your imagination free</p>
           <div class="btn-explore">
@@ -268,11 +271,10 @@
       ALPAS @ 2021
     </p>
   </section>
-  <script src="assets/js/carousel.js"></script>
   <script src="assets/js/script.js"></script>
-
+  <script src="assets/js/carousel.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+ 
 </body>
 
 

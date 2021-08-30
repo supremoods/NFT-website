@@ -14,7 +14,7 @@
   <div class="header">
     <nav class="nav-bar">
       <div class="content">
-        <div class="logo"><a href="#">ALPAS</a></div>
+        <div class="logo"><a href="#"><img src="images/logo.ico" alt=""><p>ALPAS</p></a></div>
         <ul class="menu-list">
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
@@ -32,12 +32,11 @@
     </nav>
   </div>
 
-  <div class="regContainer">
+  <!-- <div class="regContainer">
     <div id="registerContainer">
       <br>
       <div id="registerhead">
-        <h1 id="registerheader"> REGISTER</h1>
-        <img src="photo1629544662-removebg-preview.png" class="center">
+        <img src="images/logo.png" class="center">
       </div>
 
       <form class="registerhead1" method="post">
@@ -53,8 +52,6 @@
         <i class="toggleView-1 far fa-eye-slash" id="togglePassword"></i>
         <br>
 
-
-
         <i class="fas fa-unlock-alt "></i>
         <input class="textbox" type="password" name="co_password" id="co_password" placeholder="Confirm Password " required />
         <i class="toggleView-2 far fa-eye-slash" id="togglePassword"></i><br>
@@ -66,6 +63,29 @@
       </form>
 
 
+    </div>
+  </div> -->
+  <div class="container">
+    <div class="regContainer">
+      <img src="images/logo.png" class="center">
+      <form method="post">
+        <div class="form" >
+          <div class="iconId">
+            <i class="fa fa-user icon-1"></i>
+            <input class="textplace" type="text" name="username" id="username" placeholder="Username " /required><br>
+            <i class="fa fa-envelope"></i>
+            <input class="textplace" type="email" name="email" id="email" placeholder="Email " /required><br>
+            <i class="fas fa-unlock-alt"></i>
+            <input class="textplace" type="password" name="password" id="password" placeholder="Password" /required><br>
+            <i class="fas fa-unlock-alt icon-1"></i>
+            <input class="textplace" type="password" name="co_password" id="co_password" placeholder="Confirm Password " /required>
+          </div>
+          <a href="log_in.php" class="btnForgetPwd">Already have an account? Log in instead.?</a>
+          <center>
+          <button name="submit" class="button">Register</button><br>
+          </center>
+        </div>
+      </form>
     </div>
   </div>
 

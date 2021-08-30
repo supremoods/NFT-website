@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/market.css" type="text/css">
-  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/navMarket.css">
   <script src="https://kit.fontawesome.com/64d58efce2.js">
   </script>
 </head>
@@ -17,7 +17,7 @@
   <div class="header">
     <nav class="nav-bar">
       <div class="content">
-        <div class="logo"><a href="#">ALPAS</a></div>
+        <div class="logo"><a href="#"><img src="images/logo.png" alt=""><p>ALPAS</p></a></div>
         <ul class="menu-list">
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>

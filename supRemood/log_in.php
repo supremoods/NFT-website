@@ -13,12 +13,14 @@
   <link rel="stylesheet" type="text/css" href="assets/css/toast.css">
 	<script type="text/javascript" src="assets/js/account.js"></script>
 </head>
-
+<style>
+ 
+</style>
 <body>
   <div class="header">
     <nav class="nav-bar">
       <div class="content">
-        <div class="logo"><a href="#">ALPAS</a></div>
+        <div class="logo"><a href="#"><img src="images/logo.ico" alt=""><p>ALPAS</p></a></div>
         <ul class="menu-list">
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
@@ -37,8 +39,7 @@
 
   <div class="container">
     <div class="loginbody">
-      <h1> USER LOGIN </h1>
-      <img src="photo1629544662-removebg-preview.png" class="center">
+      <img src="images/logo.png" class="center">
       <form method="post">
         <div class="form" >
           <div class="iconId">
@@ -49,7 +50,9 @@
           </div>
           <a href="forgot.php" class="btnForgetPwd">Forgot Password?</a>
           <a href="register.php" class="donthaveacc">Register here</a><br>
+          <center>
           <button name="submit" class="button">Login</button><br>
+          </center>
         </div>
       </form>
     </div>

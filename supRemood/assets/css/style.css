@@ -21,7 +21,6 @@
   --yellow: #f3d351;
   --yellow-alt: #ebc63b;
   --aqua: #51dde9;
-
   --aqua-alt: #04f3fc;
 }
 
@@ -63,12 +62,37 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+.nav-bar .logo a p{
+ position:relative;
+ margin-top: 10px;
+}
+
 .nav-bar .logo a {
-  color: var(--aqua-alt);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--base);
   font-size: 2em;
   font-weight: 760;
   letter-spacing: 0.1em;
   text-decoration: none;
+
+  
+
+}
+
+.nav-bar .logo a:hover img{
+  transform: rotate(-360deg);
+  transition: all ease-in-out .3s;
+}
+
+.nav-bar .logo img{
+  transform: rotate(360deg);
+  height: 50px;
+  padding-right: 10px;
+  transition: all ease-in-out .3s;
 }
 .nav-bar .menu-list {
   display: inline-flex;
@@ -298,7 +322,6 @@ h1 {
   #reg-btn {
     color: var(--light-gray);
     background-color: rgba(255, 0, 0, 0);
-    color: var(--dark-blue-alt);
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
     padding-left: 0;
     padding-right: 0;
@@ -420,7 +443,7 @@ h1 {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-image: url('slide2.jpg');
+    background-image: url('slide1.jpg');
     display: block;
     padding: 40px 0;
     text-align: center;
@@ -548,7 +571,7 @@ h1 {
 .txt {
   position: absolute;
   letter-spacing: 10px;
-  line-height: 80px;
+  line-height: 60px;
   top: 50%;
   left: 50%;
   display: flex;
@@ -584,7 +607,12 @@ h1 {
     opacity: 1;
   }
 }
-
+.txt img{
+  -webkit-filter: drop-shadow(2px 2px 4px #222);
+  filter: drop-shadow(2px 2px 4px #222);
+  height: 300px;
+  width: 300px;
+}
 .txt h1 {
   text-align: center;
   color: var(--aqua-alt);
