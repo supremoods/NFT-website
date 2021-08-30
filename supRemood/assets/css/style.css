@@ -227,19 +227,108 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-
+/* 
 h1 {
   position: relative;
   text-align: center;
   font-weight: 400;
   top: 50%;
-}
+} */
 
 .about-us {
-  background-color: var(--pure-white);
-  height: 80vh;
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: var(--light-gray-alt);
+  overflow: hidden;
 }
 
+.about-section{
+  overflow: hidden;
+  padding: 100px 0;
+  transition:  0.8s ease-in-out;
+}
+
+.about-section .img-cont{
+  position: absolute;
+  top:0;
+  left:5em;
+  height: 100%;
+  opacity: 0;
+  transition:  1s ease-in-out;
+
+}
+.about-section .img-cont[data-scroll='in']{
+  opacity: 1;
+  transition:  2s ease-in-out;
+
+}
+.about-section .imgLogo{
+  z-index:0;
+  top:0;
+  opacity: 0;
+  height: 100%;
+  transform: scale(1.2);
+  -webkit-filter: drop-shadow(2px 2px 4px #222);
+  filter: drop-shadow(2px 2px 4px #222);
+  transition:  1s ease-in-out;
+}
+
+.about-section .imgLogo[data-scroll='in']{
+  opacity: 1;
+  
+  transition: 2s ease-in-out;
+}
+
+.inner-container{
+  position: relative;
+  width: 55%;
+  float: right;
+  opacity: 0;
+  background-color: var(--dark-blue-alt);
+  padding: 150px;
+
+}
+.inner-container[data-scroll='in']{
+
+  opacity: 1;
+  transition:  1s ease-in-out;
+
+}
+
+.about-btn{
+  border: none;
+  padding: 8px 15px;
+  background-color: var(--aqua);
+  color:var(--dark-blue-alt);
+}
+
+.about-btn:hover{
+  background-color: var(--aqua-alt);
+}
+.inner-container h1{
+  color:var(--aqua-alt);
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.border-txt{
+  height: 4px;
+  width: 25%;
+  background-color: var(--aqua-alt);
+}
+
+
+.inner-txt{
+  color: var(--light-gray-alt);
+  font-size: 14px;
+  line-height:30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
 
 .footer {
   padding: 40px 0;
@@ -655,7 +744,7 @@ h1 {
 }
 
 .txt .txt-2 span {
-  font-size: 1.5em;
+  font-size: 1em;
   color: var(--aqua-alt);
 }
 
@@ -857,5 +946,31 @@ textarea.contact-form-text {
     line-height: 40px;
     font-size: 2em;
     text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .inner-container{
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .inner-container{
+    width: 100%;
+  }
+  .about-section{
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inner-container{
+    padding: 60px;
+  }
+  .about-section{
+    padding: 0;
   }
 }

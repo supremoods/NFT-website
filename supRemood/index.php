@@ -77,8 +77,8 @@
 
       <div class="myslide fade">
         <div class="txt">
-          <h1 >NFT Art Market</h1>
-          <p>Discover and Collect Rare Digital Artwork</p>
+          <h1>Discover and Collect</h1>
+          <p>Rare Digital Artwork</p>
           <div class="btn-explore">
           <button class="btn-exp1">EXPLORE</button>
           </div>
@@ -123,16 +123,31 @@
     </div>
 
   </div>
+
   <div id="about-section" class="about-us">
-    <h1>About Section</h1>
+    <div class="about-section">
+      <div class="img-cont">
+        <img class="imgLogo" src="images/logo.png" alt="" srcset="">
+      </div>
+      <div class="inner-container">
+        <h1>About ALPAS
+          <div class="border-txt">
+          </div>
+        </h1>
+        <p class="inner-txt">
+        ALPAS is an innovation of NFT and cryptocurrency world. At ALPAS, you can purchase and share your arts by selling and paying using electronic currency. Our mission is to introduce crypto world together with the talented artist and their work.
+        </p>
+        <button class="about-btn">Read More</button>
+      </div>    
+    </div>      
   </div>
 
   <div id="gallery-section" class="gallery">
    
     <div class="app">
        <div class="feat-txt">
-      <h1>Featured Art</h1>
-    </div>
+        <h1>Featured Art</h1>
+       </div>
       <div class="cardList">
         <button class="cardList__btn btn btn--left">
           <i style="color: #fff; font-size: 2em;" class="fas fa-angle-left"></i>
@@ -271,6 +286,12 @@
       ALPAS @ 2021
     </p>
   </section>
+  <script src="assets/js/scroll-out.js"></script>
+  <script>
+    ScrollOut({
+      targets: 'div, img, h1'
+    })
+  </script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/carousel.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

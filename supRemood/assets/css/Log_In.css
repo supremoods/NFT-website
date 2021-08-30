@@ -103,7 +103,7 @@
 
 input:focus {
   outline: none;
-  background: #2a405b21;
+  background: var(--light-gray-alt);
 }
 .btnForgetPwd {
   color: var(--light-gray-alt);
