@@ -56,7 +56,6 @@
         </div>
       </form>
     </div>
-
   </div>
 
   <section class="footer">

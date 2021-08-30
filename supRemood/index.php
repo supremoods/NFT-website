@@ -67,7 +67,7 @@
           <img src="images/logo.png" alt="">
           </center>
           <h1>ALPAS</h1>
-          <p>Let your imagination free</p>
+          <p>Let Your Imagination Free</p>
           <div class="btn-explore">
           <button class="btn-exp">EXPLORE</button>
           </div>
@@ -77,8 +77,8 @@
 
       <div class="myslide fade">
         <div class="txt">
-          <h1 c;a>NFT Art Market</h1>
-          <p>Discover and Collect rare digital artwork</p>
+          <h1 >NFT Art Market</h1>
+          <p>Discover and Collect Rare Digital Artwork</p>
           <div class="btn-explore">
           <button class="btn-exp1">EXPLORE</button>
           </div>
