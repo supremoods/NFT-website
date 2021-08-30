@@ -5,10 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="assets/css/forgot.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/create.css">
   <link rel="stylesheet" href="assets/css/nav.css">
   <link rel="stylesheet" type="text/css" href="assets/css/toast.css">
-  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -34,13 +33,10 @@
   </div>
 
   <div class="background">
-    <p>RESET PASSWORD</p><br><br>
     <form class="form" method="POST">
-      <br><br>
+    <p>RESET PASSWORD</p><br><br>
       <div class="pass">
-        <br><br>
-        <input type="email" class="textplace" id="email" placeholder="Email" name="email" required>
-        <br><br>
+        <input type="email" class="textplace-1" id="email" placeholder="Email" name="email" required><br><br>
         <!--
         <label> New Password</label><br>
         <input class="textplace" id="password" type="password" placeholder=" password">
@@ -48,11 +44,13 @@
         <label> Re-enter Password</label><br>
         <input class="textplace" id="co_password" type="password" placeholder="Re-enter password"><br>
         -->
-        <input type="submit" id="submit-button" class="button" value="Proceed" name="submit">
+        <div class="RegisterButton">
+         <input id="submit-button" type="submit" value="Proceed" name="submit"></input>
+        </div>
       </div>
     </form>
   </div>
-  <section class="footer style="position: absolute; bottom: 0;">
+  <section class="footer">
     <div class="social">
       <a href="http://"><i class="fab fa-instagram"></i></a>
       <a href="http://"><i class="fab fa-facebook"></i></a>

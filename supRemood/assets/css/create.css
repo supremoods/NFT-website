@@ -98,7 +98,7 @@ input[type=submit] {
   color: white;
 }
 
-button[type=submit]:hover {
+input[type=submit]:hover {
   background-color: black;
   color: white;
 }
