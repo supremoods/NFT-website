@@ -31,6 +31,12 @@ link1.onclick = ()=>{
 	cancelBtn.classList.remove("show");
 	body.classList.remove("disabledScroll");
 }
+link2.onclick = ()=>{
+	menu.classList.remove("active");
+	menuBtn.classList.remove("hide");
+	cancelBtn.classList.remove("show");
+	body.classList.remove("disabledScroll");
+}
 
 
 link3.onclick = ()=>{

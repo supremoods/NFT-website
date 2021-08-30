@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.082);
+  background: rgba(0, 0, 0, 0.007);
   overflow: hidden;
 }
 
@@ -39,7 +39,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: -5;
-  filter: blur(8px);
+  filter: blur(3px);
   pointer-events: none;
   user-select: none;
   overflow: hidden;
@@ -65,6 +65,54 @@ button:focus {
   transition: transform 1000ms ease, opacity 1000ms ease;
   overflow: hidden;
 }
+.app .feat-txt{
+  position: absolute;
+  letter-spacing: 10px;
+  line-height: 80px;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation-name: feat;
+  -webkit-animation-duration: 2s;
+  animation-name: feat;
+  animation-duration: 1s;
+  z-index: 1;
+  
+
+}
+
+
+@-webkit-keyframes feat {
+  from {
+    top: 100%;
+    opacity: 0.2;
+  }
+  to {
+    top: 18%;
+    opacity: 1;
+  }
+}
+
+@keyframes feat {
+  from {
+    top: 100%;
+    opacity: 0.2;
+  }
+  to {
+    top: 18%;
+    opacity: 1;
+  }
+}
+
+.app .feat-txt h1{
+  text-align: center;
+  color: var(--aqua-alt);
+  line-height: 1.5em;
+  font-size: 4em;
+  font-weight: 600;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: font-size ease-in-out .4s;
+}
 .app__bg__image .img-feat {
   width: 100%;
   height: 100%;
@@ -74,12 +122,20 @@ button:focus {
   opacity: 1;
   --image-translate-offset: 0;
 }
+.app__bg__image.previous--previous--image,
 .app__bg__image.previous--image,
+.app__bg__image.next--next--image,
 .app__bg__image.next--image {
   opacity: 0;
 }
 .app__bg__image.previous--image {
   --image-translate-offset: -25%;
+}
+.app__bg__image.previous--previous--image {
+  --image-translate-offset: -50%;
+}
+.app__bg__image.next--next--image {
+  --image-translate-offset: 50%;
 }
 .app__bg__image.next--image {
   --image-translate-offset: 25%;
@@ -131,7 +187,7 @@ button:focus {
   display: inline-block;
   width: var(--card-width);
   height: var(--card-height);
-  transition: transform var(--card-transition-duration)
+  transition: transform var(--card-transition-duration) 
     var(--card-transition-easing);
   user-select: none;
 }
@@ -144,14 +200,17 @@ button:focus {
   height: 100%;
   background: #000;
   z-index: 1;
-  transition: opacity var(--card-transition-duration)
+  transition: opacity, height var(--card-transition-duration) 
     var(--card-transition-easing);
   opacity: calc(1 - var(--opacity));
+ 
 }
 .card__image {
   position: relative;
   width: 100%;
   height: 100%;
+  
+
 }
 .card__image .img-feat {
   position: absolute;
@@ -160,7 +219,9 @@ button:focus {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
+
 .card.current--card {
   --current-card-rotation-offset: 0;
   --card-translateX-offset: 0;
@@ -170,17 +231,40 @@ button:focus {
 }
 .card.previous--card {
   --card-translateX-offset: calc(-1 * var(--card-width) * 1.1);
-  --card-rotation-offset: 25deg;
+  --card-rotation-offset: -19deg;
+
 }
+.card.previous--previous--card {
+  --card-translateX-offset: calc(-1.67 * var(--card-width) * 1.1);
+  --card-rotation-offset: -35deg;
+
+ 
+}
+
 .card.next--card {
   --card-translateX-offset: calc(var(--card-width) * 1.1);
-  --card-rotation-offset: -25deg;
+  --card-rotation-offset: 19deg;
+ 
 }
+.card.next--next--card {
+  --card-translateX-offset: calc(1.67 * var(--card-width) * 1.1);
+  --card-rotation-offset: 35deg;
+
+}
+.card.previous--previous--card,
 .card.previous--card,
+.card.next--next--card,
 .card.next--card {
   --card-scale-offset: 0.9;
   --opacity: 0.4;
 }
+
+.card.previous--previous--card,
+.card.next--next--card{
+  --card-scale-offset: 0.8;
+  --opacity: 0.4;
+}
+
 
 .infoList {
   position: absolute;
@@ -256,6 +340,8 @@ button:focus {
   display: block;
 }
 .info.previous--info,
+.info.previous--previous--info,
+.info.next--next--info,
 .info.next--info {
   opacity: 0;
   display: none;
@@ -301,5 +387,43 @@ button:focus {
   :root {
     --card-width: 250px;
     --card-height: 400px;
+  }
+}
+
+
+@media screen and (max-width:1400px) {
+  
+.card.previous--card {
+  --card-translateX-offset: calc(-1 * var(--card-width) * 1.1);
+}
+
+.card.previous--previous--card {
+  --card-translateX-offset: calc(-.5 * var(--card-width) * 1.1);
+  z-index: -1;
+ 
+}
+
+.card.next--card {
+  --card-translateX-offset: calc(var(--card-width) * 1.1);
+
+}
+.card.next--next--card {
+  --card-translateX-offset: calc(.5 * var(--card-width) * 1.1);
+  z-index: -1;
+}
+  
+}
+
+@media screen and (max-width:1400px){
+  .app .feat-txt h1{
+    font-size: 2.5em;
+    transition: font-size ease-in-out .4s;
+  }
+}
+
+@media screen and (max-width:830px){
+  :root {
+    --card-width: 150px;
+    --card-height: 300px;
   }
 }

@@ -287,6 +287,7 @@ h1 {
   }
 
   #log-in-btn {
+    color: var(--light-gray);
     background-color: rgba(255, 0, 0, 0);
     position: relative;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
@@ -295,6 +296,7 @@ h1 {
   }
 
   #reg-btn {
+    color: var(--light-gray);
     background-color: rgba(255, 0, 0, 0);
     color: var(--dark-blue-alt);
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
@@ -355,6 +357,7 @@ h1 {
     line-height: 50px;
     border-radius: 10%;
     z-index: 9;
+    color:var(--light-gray);
   }
 
   .icon:hover {
@@ -597,7 +600,7 @@ h1 {
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .txt .btn-explore {
-  padding: 2em;
+  padding: 2em;     
   width: 100%;
   display: flex;
   justify-content: center;
