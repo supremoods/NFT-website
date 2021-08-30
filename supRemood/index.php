@@ -139,7 +139,21 @@
         </p>
         <button class="about-btn">Read More</button>
       </div>    
-    </div>      
+    </div> 
+    
+    <div class="about-grid-section">
+      <div class="grid-container">
+        <div class="about-grid-col">
+
+        </div>
+        <div class="about-grid-col">
+          
+        </div>
+        <div class="about-grid-col">
+          
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="gallery-section" class="gallery">
