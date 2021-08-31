@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 31, 2021 at 08:31 AM
+-- Generation Time: Aug 31, 2021 at 08:36 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -46,7 +46,8 @@ CREATE TABLE `product` (
   `description` varchar(255) NOT NULL,
   `creator` varchar(255) NOT NULL,
   `bidding_start_time` datetime(6) NOT NULL,
-  `bidding_end_time` datetime(6) NOT NULL
+  `bidding_end_time` datetime(6) NOT NULL,
+  `image` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -107,7 +108,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `user`
