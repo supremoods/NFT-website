@@ -250,11 +250,7 @@ body{
 }
 
 .profile_section{
-<<<<<<< Updated upstream
   position: absolute;
-=======
-  position:relative;
->>>>>>> Stashed changes
   display: flex;
   flex-direction: column;
   align-items: center;
