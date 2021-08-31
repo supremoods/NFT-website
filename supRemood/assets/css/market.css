@@ -63,8 +63,8 @@
   z-index: 1;
   width: -webkit-fill-available;
   height: 225px;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: top;
 }
 
 canvas{

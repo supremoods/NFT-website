@@ -77,132 +77,11 @@
     <hr>
 
     <div class="grid-container">
-      <div class="grid-item">
-        <div>
-          <div class="thumb">
-            <img protected class="thumbnail" src="images\101913208_2933299430122013_2989485938663813675_o.jpg"
-              alt="sample image">
-          </div>
-          <div class="artwork-description">
-            <h6> PORTRAIT </h6>
-            <div class="line">
-              <p>Current bid</p>
-              <div class="bid-price">
-                <img class="token" src="images/token.png" height="20" width="20">
-                <h5> 10.00 BUSD </h5>
-              </div>
-            </div>
-            <div class="line w-price">
-              <p class="price">= PHP 1,000.00</p>
-            </div>
-            <div class="line creator">
-              <p class="p-content"> Creator </p>
-              <h5> John Lappot </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <div>
-          <img protected class="thumbnail" src="images/103565282_2930085473776742_4986999794956651481_o.jpg"
-            alt="sample image">
-          <div class="artwork-description">
-            <h6>PORTRAIT </h6>
-            <div class="line">
-              <p>Current bid</p>
-              <div class="bid-price">
-                <img class="token" src="images/token.png" height="20" width="20">
-                <h5> 10.00 BUSD </h5>
-              </div>
-            </div>
-            <div class="line w-price">
-              <p class="price">= PHP 1,000.00</p>
-            </div>
-            <div class="line creator">
-              <p class="p-content"> Creator </p>
-              <h5> John Lappot </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="grid-item">
-        <div>
-          <img protected class="thumbnail" src="images/103565282_2930085473776742_4986999794956651481_o.jpg"
-            alt="sample image">
-          <div class="artwork-description">
-            <h6>PORTRAIT </h6>
-            <div class="line">
-              <p>Current bid</p>
-              <div class="bid-price">
-                <img class="token" src="images/token.png" height="20" width="20">
-                <h5> 10.00 BUSD </h5>
-              </div>
-            </div>
-            <div class="line w-price">
-              <p class="price">= PHP 1,000.00</p>
-            </div>
-            <div class="line creator">
-              <p class="p-content"> Creator </p>
-              <h5> John Lappot </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <div>
-          <img protected class="thumbnail" src="images\101913208_2933299430122013_2989485938663813675_o.jpg"
-            alt="sample image">
-          <div class="artwork-description">
-            <h6>PORTRAIT </h6>
-            <div class="line">
-              <p>Current bid</p>
-              <div class="bid-price">
-                <img class="token" src="images/token.png" height="20" width="20">
-                <h5> 10.00 BUSD </h5>
-              </div>
-            </div>
-            <div class="line w-price">
-              <p class="price">= PHP 1,000.00</p>
-            </div>
-            <div class="line creator">
-              <p class="p-content"> Creator </p>
-              <h5> John Lappot </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <div>
-          <img protected class="thumbnail" src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d35eacaf1176b0008974b54%2F0x0.jpg%3FcropX1%3D790%26cropX2%3D5350%26cropY1%3D784%26cropY2%3D3349"
-            alt="sample image">
-          <div class="artwork-description">
-            <h6>PORTRAIT </h6>
-            <div class="line">
-              <p>Current bid</p>
-              <div class="bid-price">
-                <img class="token" src="images/token.png" height="20" width="20">
-                <h5> 10.00 ALP </h5>
-              </div>
-            </div>
-            <div class="line w-price">
-              <p class="price">= PHP 1,000.00</p>
-            </div>
-            <div class="line creator">
-              <p class="p-content"> Creator </p>
-              <h5> John Lappot </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <?php
+        include("phpFunctions/marketPage.php");
+      ?>
       <br><br><br><br><br>
-    </div>
-  </div>
+   </div>
   <section class="footer">
     <div class="social">
       <a href="http://"><i class="fab fa-instagram"></i></a>
@@ -228,10 +107,11 @@
 <!-- PROTECT IMAGE -->
 <script src="https://cdn.jsdelivr.net/gh/ColonelParrot/ProtectImage.js@v1.2/src/ProtectImage.min.js">
 </script>
+
 <script>
-  window.onload = function() {
-    ProtectImageJS.protect(ProtectImageJS.getLabelledImages())
-  }
+  $("body").on("contextmenu", "img", function(e) {
+    return false;
+  });
 </script>
 </body>
 
