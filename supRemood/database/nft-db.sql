@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 31, 2021 at 08:36 AM
+-- Generation Time: Sep 01, 2021 at 12:59 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -47,8 +47,25 @@ CREATE TABLE `product` (
   `creator` varchar(255) NOT NULL,
   `bidding_start_time` datetime(6) NOT NULL,
   `bidding_end_time` datetime(6) NOT NULL,
-  `image` varchar(500) NOT NULL
+  `image` varchar(500) NOT NULL,
+  `category` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`product_id`, `name`, `price`, `description`, `creator`, `bidding_start_time`, `bidding_end_time`, `image`, `category`) VALUES
+(2, 'Art 1', 500, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ALPAS NFT', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', 'images/products/1.jpg', 'digital_art'),
+(3, 'Art 2', 300, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ALPAS NFT', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', 'images/products/2.jpg', 'digital_art'),
+(4, 'Art 3', 500, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ALPAS NFT', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', 'images/products/3.jpg', 'digital_art'),
+(5, 'Art 4', 500, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ALPAS NFT', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', 'images/products/4.jpg', 'digital_art'),
+(6, 'Art 5', 1000, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ALPAS NFT', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', 'images/products/5.jpg', 'digital_art'),
+(7, 'Art 6', 300, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ALPAS NFT', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', 'images/products/6.jpg', 'digital_art'),
+(8, 'Art 7', 700, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ALPAS NFT', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', 'images/products/7.jpg', 'digital_art'),
+(9, 'Art 8', 800, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ALPAS NFT', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', 'images/products/8.jpg', 'digital_art'),
+(10, 'Art 9', 500, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ALPAS NFT', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', 'images/products/9.jpg', 'digital_art'),
+(11, 'Art 10', 900, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'ALPAS NFT', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', 'images/products/10.jpg', 'digital_art');
 
 -- --------------------------------------------------------
 
@@ -60,17 +77,18 @@ CREATE TABLE `user` (
   `userID` int(11) NOT NULL,
   `username` varchar(50) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
-  `password` varchar(50) DEFAULT NULL
+  `password` varchar(50) DEFAULT NULL,
+  `balance` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`userID`, `username`, `email`, `password`) VALUES
-(5, 'supremood', 'lappay.john@gmail.com', 'supremood'),
-(6, 'supremo', 'john@gmail.com', 'supremood'),
-(9, 'dormammu', 'jericovic65@gmail.com', 'dormammu');
+INSERT INTO `user` (`userID`, `username`, `email`, `password`, `balance`) VALUES
+(5, 'supremood', 'lappay.john@gmail.com', 'supremood', 0),
+(6, 'supremo', 'john@gmail.com', 'supremood', 0),
+(9, 'dormammu', 'jericovic65@gmail.com', 'dormammu', 0);
 
 --
 -- Indexes for dumped tables
@@ -108,7 +126,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `user`
