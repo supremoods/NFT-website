@@ -1026,15 +1026,21 @@ textarea.contact-form-text {
 
 
 @media screen and (max-width: 1300px) {
-  
+    
+  .about-grid-section {
+    height:100%;
+    overflow: visible;
+  }
+
   .about-grid-section .grid-container{
     grid-template-columns: 1fr;
     grid-gap:  0;
     margin: 1em;
+    overflow: visible;
   }
 
   .grid-container .abt-content p{
     margin: 5em;
   }
-
+ 
 }
