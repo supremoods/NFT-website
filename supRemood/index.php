@@ -140,20 +140,33 @@
         <button class="about-btn">Read More</button>
       </div>    
     </div> 
-    
-    <div class="about-grid-section">
+
+  </div>
+
+  <div id="cont-about" class="about-grid-section">
       <div class="grid-container">
         <div class="about-grid-col">
-
+          <div class="abt-content">
+            <img class="img-abt" src="images/promote.svg">
+            <h1>PROMOTE</h1>
+            <p>When you buy a collectible token you’re directly paying the author. The more popular the artwork, the more demand and value it will have. Therefore it is in the best interest of artists and investors to promote their collections.</p>
+          </div>
         </div>
         <div class="about-grid-col">
-          
+          <div class="abt-content">
+            <img class="img-abt" src="images/transaction.svg">
+            <h1>NO MIDDLEMAN</h1>
+            <p>You can send, receive, and exchange tokens safely, peer to peer, from anywhere in the world, without going through institutions or third parties.</p>
+          </div>
         </div>
         <div class="about-grid-col">
-          
+          <div class="abt-content">
+            <img class="img-abt" src="images/immutable.svg">
+            <h1>IMMUTABLE RECORD</h1>
+            <p>Every artwork is registered in an unchanging and transparent database. This way both the ownership and transaction history can be traced back and verified by anyone, anywhere, and for the rest of human history.</p>
+          </div>         
         </div>
       </div>
-    </div>
   </div>
 
   <div id="gallery-section" class="gallery">
