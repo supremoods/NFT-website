@@ -236,25 +236,21 @@ body{
   left: 78px;
   width: calc(100% - 78px);
 }
+
+
+/* ------------- home section ----------*/
+
 .home-section .home-content{
-  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.home-section .home-content h1{
-    margin-top:50%;
-  color: #11101d;
-  font-size: 35px;
+
+.img-section img{
+  height: 200px;
+
 }
-.home-section .home-content .bx-menu{
-  margin: 0 15px;
-  cursor: pointer;
-}
-.home-section .home-content h1{
-  font-size: 26px;
-  font-weight: 600;
-}
+
 @media (max-width: 420px) {
   .sidebar.close .nav-links li .sub-menu{
     display: none;

@@ -124,17 +124,21 @@
 
     </ul>
   </div>
-  <div about-section>
 
-  </div>
   <section id="home-section" class="home-section">
     <div class="home-content">
         <div class="profile">
           <div class="dp-card">
- 
+            <div class="img-section">
+              <img src="images/profile.jpg">
+              <button><i class='bx bx-image-add'></i></button>
+            </div>
           </div>
           <div class="input-section">
-
+            <input class="textbox" type="text" name="username" id="username" placeholder="exampleusername " required />
+            <input class="textbox" type="email" name="email" id="email" placeholder="exampleuser@gmail.com " required />
+            <input class="textbox" type="password" name="password" id="password" placeholder="******************* " required />
+            <input class="textbox" type="password" name="co_password" id="co_password" placeholder="******************* " required />
           </div>
         </div>
     </div>
