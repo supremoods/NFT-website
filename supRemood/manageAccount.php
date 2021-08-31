@@ -20,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body  >
   <div class="header">
     <nav class="nav-bar">
       <div class="content">
@@ -34,6 +34,7 @@
               us</a></li>
           <li class="links"><a class="btn-links" href="market_page.php">Gallery</a></li>
           <li class="links"><a class="btn-link3" href="index.php#contact-us">Contact Us</a></li>
+    
           <?php
               session_start();
               if(!ISSET($_SESSION['id'])){
@@ -42,10 +43,13 @@
             <li><a id='reg-btn' href='register.php'>Register</a></li>
             ";
             }else{
+              $id = (int) $_SESSION['id'];
+
+              $query = mysqli_query ($conn, "SELECT * FROM user WHERE userID = '$id' ") or die (mysqli_error());
+              $fetch = mysqli_fetch_array ($query);
             echo '
             <li>
-              <a href="manageAccount.php" class="desktop-link child_1"><i class="fas
-                  fa-user-astronaut"></i></a>
+              <a href="manageAccount.php" class="desktop-link child_1"><img src="images/'.$fetch['image'].'" ></a>
               <input type="checkbox" id="show-features">
               <ul class="drop-down">
                 <li><a href="manageAccount.php">Account</a></li>
@@ -80,8 +84,8 @@
         </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="#home-section">Acount</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">ALP wallet</a></li>
+          <li><a href="#home-section">Profile</a></li>
+          <li><a href="#alp-container">ALP wallet</a></li>
         </ul>
       </li>
       <li>
@@ -130,29 +134,30 @@
 
     </ul>
   </div>
-
-  <section id="home-section" class="home-section">
-    <div class="prof_container">
-        <div class="profile_section">
-          <div class="dp-card">
-            <div class="img-section">
-              <img src="images/profile.jpg">
-              <span>
-                <form method="post">
-                  <label for="fileImg"><i class='bx bx-image-add'></i></label>
-                  <input type="file" name="fileUpload" id="fileImg" style="display: none; visibility:none;">
-                </form>
-              </span>
-            </div>
-          </div>
-          <div class="input-section">
-            <?php
+           <?php
                $id = (int) $_SESSION['id'];
 
                $query = mysqli_query ($conn, "SELECT * FROM user WHERE userID = '$id' ") or die (mysqli_error());
                $fetch = mysqli_fetch_array ($query);
                include('phpFunctions/profileFunct.php');
             ?>
+  <section id="home-section" class="home-section">
+    <div class="prof_container">
+        <div class="profile_section">
+          <div class="dp-card">
+            <div class="img-section">
+              <img src="images/<?php echo $fetch['image'] ?>">
+              <form method="post" enctype="multipart/form-data">
+              <input type="file" name="fileUpload" id="fileImg"  >
+              <span>
+              <button name="uploadImage"><i class='bx bx-image-add'></i></button>                                
+              </span>
+              
+              </form>
+            </div>
+          </div>
+          <div class="input-section">
+       
            
             <table class="input-content">
               <tr>
@@ -187,7 +192,7 @@
   </section>
 
   <!-- wallet alp -->
-  <section class="home-section" >
+  <section id="alp-container" class="home-section" >
     <div class="home-content">
         <div class="profile">
           <div class="dp-card">

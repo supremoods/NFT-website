@@ -211,8 +211,13 @@
   padding-left: 4em;
 }
 
-.child_1 i {
-  font-size: 1.9em;
+.child_1 img {
+  position:absolute;
+  border-radius: 50%;
+  top:-15px;
+  left:30px;
+  height: 40px;
+  width: 40px;
 }
 
 
@@ -286,11 +291,9 @@
   .child_1{
     padding-left: 0;
   }
-  .child_1 i{
-    color: var(--light-gray-alt);
-    border-radius: 50%;
-    font-size: 2em;
-    padding: 20px;
+  .child_1 img{
+    position: relative;
+    left:0;
     transition: all .3s ease;
   }
   .child_1 i:hover{
