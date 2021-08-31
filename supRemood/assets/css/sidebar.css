@@ -243,24 +243,30 @@ body{
 }
 
 .prof_container{
+  
   display:flex;
   justify-content: center;
   align-items: center;
 }
 
 .profile_section{
+<<<<<<< Updated upstream
   position: absolute;
+=======
+  position:relative;
+>>>>>>> Stashed changes
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  top: 15em;
+  top: 13em;
   background-color: #11111109 ;
   border-radius:20px;
   padding:4em;
   width: 40%;
   height: 50%;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  
 }
 
 .img-section{

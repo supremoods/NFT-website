@@ -1,4 +1,6 @@
-
+<?php 
+    include("phpFunctions/registerFunc.php");
+  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -114,9 +116,7 @@
   <script type="text/javascript" src="assets/js/account.js"></script>
   <script src="assets/js/script.js"></script>
 	<script type="text/javascript" src="assets/js/toast.js"></script>
-  <?php 
-    include("phpFunctions/registerFunc.php");
-  ?>
+
 </body>
 
 </html>

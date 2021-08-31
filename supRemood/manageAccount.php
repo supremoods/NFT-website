@@ -138,7 +138,10 @@
             <div class="img-section">
               <img src="images/profile.jpg">
               <span>
-                <i onclick="$('.file-upload-input').trigger( 'click' )"class='bx bx-image-add'></i>
+                <form method="post">
+                  <label for="fileImg"><i class='bx bx-image-add'></i></label>
+                  <input type="file" name="fileUpload" id="fileImg" style="display: none; visibility:none;">
+                </form>
               </span>
             </div>
           </div>

@@ -56,7 +56,7 @@
           <a href="forgot.php" class="btnForgetPwd">Forgot Password?</a>
           <a href="register.php" class="donthaveacc">Register here</a><br>
           <center>
-          <button name="submit" class="button">Login</button><br>
+          <button name="submit" id="#submit-button" class="button">Login</button><br>
           </center>
         </div>
       </form>
