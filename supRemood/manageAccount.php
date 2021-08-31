@@ -129,7 +129,14 @@
   </div>
   <section id="home-section" class="home-section">
     <div class="home-content">
-        <h1>Account Section</h1>
+        <div class="profile">
+          <div class="dp-card">
+ 
+          </div>
+          <div class="input-section">
+
+          </div>
+        </div>
     </div>
   </section>
   <section id="Sell-content" class="home-section">
