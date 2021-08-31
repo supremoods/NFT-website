@@ -7,6 +7,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALPAS | Login</title>
+  <link rel="icon" href="images/logo.png" />
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/Log_In.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/nav.css">
@@ -20,14 +22,15 @@
   <div class="header">
     <nav class="nav-bar">
       <div class="content">
-        <div class="logo"><a href="#"><img src="images/logo.ico" alt=""><p>ALPAS</p></a></div>
+        <div class="logo"><a href="#"><img src="images/logo.png" alt=""><p>ALPAS</p></a></div>
         <ul class="menu-list">
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
           </div>
           <li class="links"><a href="index.php#cover-section">Home</a></li>
-          <li class="links"><a href="index.php#about-section">About us</a></li>
+          <li class="links"><a href="index.php#about-section">About Us</a></li>
           <li class="links"><a href="market_page.php">Gallery</a></li>
+          <li class="links"><a class="btn-link3" href="#contact-us">Contact Us</a></li>
           <li><a id="reg-btn" href="register.php">Register</a></li>
         </ul>
         <div class="icon menu-btn">

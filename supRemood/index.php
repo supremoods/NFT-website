@@ -6,11 +6,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALPAS</title>
+  <link rel="icon" href="images/logo.png" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/styleFeat.css">
   <script src="https://kit.fontawesome.com/64d58efce2.js">
   </script>
-  <title>ALPAS</title>
+  
 </head>
 
 <body>

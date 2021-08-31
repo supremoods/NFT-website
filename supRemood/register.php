@@ -4,9 +4,11 @@
 
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALPAS | Register</title>
   <link rel="stylesheet" href="assets/css/create.css">
   <link rel="stylesheet" href="assets/css/nav.css">
   <link rel="stylesheet" type="text/css" href="assets/css/toast.css">
+  <link rel="icon" href="images/logo.png" />
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,7 +16,7 @@
   <div class="header">
     <nav class="nav-bar">
       <div class="content">
-        <div class="logo"><a href="#"><img src="images/logo.ico" alt=""><p>ALPAS</p></a></div>
+        <div class="logo"><a href="#"><img src="images/logo.png" alt=""><p>ALPAS</p></a></div>
         <ul class="menu-list">
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>

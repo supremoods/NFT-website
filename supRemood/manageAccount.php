@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title> Manage Account </title>
+  <title>ALPAS | Account</title>
+  <link rel="icon" href="images/logo.png" />
   <link rel="stylesheet" href="assets/css/sidebar.css">
   <link rel="stylesheet" href="assets/css/navMarket.css">
   <!-- Boxiocns CDN Link -->

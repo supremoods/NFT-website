@@ -60,7 +60,7 @@
             
             }else{
                 
-                $query = "INSERT INTO user(userID,username,email,password) VALUES(NULL,'$username','$email','$password')";
+                $query = "INSERT INTO user(userID,username,email,password,balance) VALUES(NULL,'$username','$email','$password',0)";
 
                 $cmd = mysqli_query($conn,$query) or die(mysqli_error());
                 
