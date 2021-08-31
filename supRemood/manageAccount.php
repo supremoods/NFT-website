@@ -1,3 +1,7 @@
+<?php
+	include('phpFunctions/dbConnect.php');
+ 
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -126,41 +130,75 @@
   </div>
 
   <section id="home-section" class="home-section">
-    <div class="home-content">
-        <div class="profile">
+    <div class="prof_container">
+        <div class="profile_section">
           <div class="dp-card">
             <div class="img-section">
               <img src="images/profile.jpg">
-              <button><i class='bx bx-image-add'></i></button>
+              <span>
+                <i onclick="$('.file-upload-input').trigger( 'click' )"class='bx bx-image-add'></i>
+              </span>
             </div>
           </div>
           <div class="input-section">
-            <input class="textbox" type="text" name="username" id="username" placeholder="exampleusername " required />
-            <input class="textbox" type="email" name="email" id="email" placeholder="exampleuser@gmail.com " required />
-            <input class="textbox" type="password" name="password" id="password" placeholder="******************* " required />
-            <input class="textbox" type="password" name="co_password" id="co_password" placeholder="******************* " required />
+            <?php
+               $id = (int) $_SESSION['id'];
+
+               $query = mysqli_query ($conn, "SELECT * FROM user WHERE userID = '$id' ") or die (mysqli_error());
+               $fetch = mysqli_fetch_array ($query);
+               include('phpFunctions/profileFunct.php');
+            ?>
+           
+            <table class="input-content">
+              <tr>
+                <form method="post">
+                  <td class="col-1"><label>Email</label></td>
+                  <td class="col-2"><input class="input-textbox" type="email" name="email" id="email" value="<?php echo $fetch['email'] ?>" required /></td>
+                  <td class="col-3"><button name="submitEmail"><i class='bx bx-edit-alt edit_email'></i></button></td>
+                </form>
+              </tr>
+              <tr>
+              <form method="post">
+                <td class="col-1"><label>Username</label></td>
+                <td class="col-2"><input class="input-textbox" type="text" name="username" id="username" value="<?php echo $fetch['username'] ?>" required /></td>
+                <td class="col-3"><button name="submitUser"><i class='bx bx-edit-alt edit_username'></i></td>
+                </form>
+              </tr>
+              <tr>
+              <form method="post">
+                <td class="col-1"><label>Password</label></td>
+                <td class="col-2"><input class="input-textbox" type="password" name="password" id="password" value="<?php echo $fetch['password'] ?> " required /></td>
+                <td class="col-3"><button name="submitPass"><i class='bx bx-edit-alt edit_pass'></i></td>
+                </form>
+              </tr>
+            </table>
+            
           </div>
         </div>
     </div>
+
+    
+
   </section>
-  <section id="Sell-content" class="home-section">
+  <section id="Sell-content" class="sell-section">
     <div class="home-content">
         <h1>Sell Art Section</h1>
     </div>
   </section>
 
-  <section id="Order" class="home-section">
+  <section id="Order" class="order-section">
     <div class="home-content">
         <h1>Order</h1>
     </div>
   </section>
 
-  <section id="Collections" class="home-section">
+  <section id="Collections" class="collect-section">
     <div class="home-content">
         <h1>Collections</h1>
     </div>
   </section>
-
+  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="assets/js/sidebar.js"></script>
 </body>
 

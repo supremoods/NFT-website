@@ -224,6 +224,15 @@ body{
 
 
 
+
+
+.sidebar.close ~ .home-section{
+  left: 78px;
+  width: calc(100% - 78px);
+}
+
+
+/* ------------- home section ----------*/
 .home-section{
   position: relative;
   background: var(--light-gray-alt);
@@ -232,23 +241,107 @@ body{
   width: calc(100% - 260px);
   transition: all 0.5s ease;
 }
-.sidebar.close ~ .home-section{
-  left: 78px;
-  width: calc(100% - 78px);
+
+.prof_container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-/* ------------- home section ----------*/
-
-.home-section .home-content{
+.profile_section{
+  position:absolute;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  top: 15em;
+  background-color: #11111109 ;
+  border-radius:20px;
+  padding:4em;
+  width: 40%;
+  height: 50%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.img-section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height:200px;
+  width:200px;
 }
 
 .img-section img{
-  height: 200px;
+  transform: scaleX(-1);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+ 
 }
+.img-section span{
+  position: absolute;
+  right:22px;
+  bottom: 30px;
+  background: var(--aqua);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-blue-alt);
+  box-shadow: 0px 0px 20px 0px rgba(32, 41, 54, 0.05);
+  cursor: pointer;
+
+}
+.prof_container .input-section{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  position: relative;
+}
+.input-section .input-content{
+  border-spacing: 0px 20px;
+  border-collapse: separate; 
+
+}
+.input-section .input-content tr{
+  background-color: var(--light-gray-alt);
+ 
+}
+.input-section .input-content td{
+  border: none;
+  padding:20px;
+  font-size: 14px;
+}
+.input-section .input-textbox{
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  width: 100%;
+}
+.input-section .input-content td label{
+  margin-left:2em;
+}
+.input-section .input-content .col-3{
+  display: flex;
+  flex-direction: row; 
+}
+
+.input-section .input-content .col-3 i{
+ font-size: 17px;
+}
+
+.input-section .input-content .col-3 i:hover{
+  color:#00bac0;
+  cursor: pointer;
+}
+
+
+
+
 
 @media (max-width: 420px) {
   .sidebar.close .nav-links li .sub-menu{
