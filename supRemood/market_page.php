@@ -82,6 +82,7 @@
       ?>
       <br><br><br><br><br>
    </div>
+  </div>
   <section class="footer">
     <div class="social">
       <a href="http://"><i class="fab fa-instagram"></i></a>
