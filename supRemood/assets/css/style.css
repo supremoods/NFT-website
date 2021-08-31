@@ -248,21 +248,22 @@ h1 {
 .about-section{
   overflow: hidden;
   padding: 100px 0;
-  transition:  0.8s ease-in-out;
+  transition:  0.8s ease;
 }
 
 .about-section .img-cont{
   position: absolute;
   top:0;
-  left:5em;
+  left:-4em;
   height: 100%;
   opacity: 0;
-  transition:  1s ease-in-out;
+
 
 }
 .about-section .img-cont[data-scroll='in']{
+  left:5em;
   opacity: 1;
-  transition:  2s ease-in-out;
+  transition:  2s ease;
 
 }
 .about-section .imgLogo{
@@ -273,7 +274,8 @@ h1 {
   transform: scale(1.2);
   -webkit-filter: drop-shadow(2px 2px 4px #222);
   filter: drop-shadow(2px 2px 4px #222);
-  transition:  1s ease-in-out;
+  transition:  1s ease;
+  
 }
 
 .about-section .imgLogo[data-scroll='in']{
@@ -286,16 +288,14 @@ h1 {
   position: relative;
   width: 55%;
   float: right;
-  opacity: 0;
-  background-color: var(--dark-blue-alt);
+  background-color: #222328f5;
   padding: 150px;
+  opacity: 0;
 
 }
 .inner-container[data-scroll='in']{
-
   opacity: 1;
-  transition:  1s ease-in-out;
-
+  transition:  1s ease;
 }
 
 .about-btn{
@@ -330,6 +330,54 @@ h1 {
   margin-bottom: 40px;
 }
 
+
+.about-grid-section{
+  position: relative;
+  background-color: var(--light-gray);
+  height:60vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-grid-section .grid-container{
+  display:grid;
+  grid-template-columns: .5fr .5fr .5fr;
+  margin: 1em;
+  overflow: hidden;
+}
+
+.grid-container .abt-content{
+  margin-top:22em;
+  opacity: 0;
+}
+
+.grid-container .abt-content[data-scroll='in']{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  opacity: 1;
+  transition: all 1s ease;
+  margin-top:0em;
+}
+
+.grid-container .abt-content h1{
+  padding:10px;
+  text-align: center;
+}
+.grid-container .abt-content  p{
+  padding:20px;
+  text-align: center;
+  margin:20px;
+  line-height: 30px;
+}
+.abt-content .img-abt{
+  height: 200px;
+  padding-bottom: 2em;
+}
 .footer {
   padding: 40px 0;
   background-color: var(--light-gray);
@@ -973,4 +1021,20 @@ textarea.contact-form-text {
   .about-section{
     padding: 0;
   }
+}
+
+
+
+@media screen and (max-width: 1300px) {
+  
+  .about-grid-section .grid-container{
+    grid-template-columns: 1fr;
+    grid-gap:  0;
+    margin: 1em;
+  }
+
+  .grid-container .abt-content p{
+    margin: 5em;
+  }
+
 }

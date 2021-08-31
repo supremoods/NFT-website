@@ -11,7 +11,7 @@ const link1 = document.querySelector('.btn-link1');
 const link2 = document.querySelector('.btn-link2');
 const link3 = document.querySelector('.btn-link3');
 const sidebarShow = document.querySelector(".sidebar");
-
+const abt_btn = document.querySelector(".about-btn");
 
 menuBtn.onclick = ()=>{
   menu.classList.add("active");
@@ -50,7 +50,9 @@ link3.onclick = ()=>{
 	body.classList.remove("disabledScroll");
 }
 
-
+abt_btn.onclick = ()=>{
+	window.location = 'index.php#cont-about';
+}
 
 
   

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title> Manage Account </title>
   <link rel="stylesheet" href="assets/css/sidebar.css">
-  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/navMarket.css">
   <!-- Boxiocns CDN Link -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://kit.fontawesome.com/64d58efce2.js">
@@ -17,7 +17,7 @@
   <div class="header">
     <nav class="nav-bar">
       <div class="content">
-        <div class="logo"><a href="#">ALPAS</a></div>
+        <div class="logo"><a href="#"><img src="images/logo.png" alt=""><p>ALPAS</p></a></div>
         <ul class="menu-list">
           <div class="icon cancel-btn cancel-btn_siderbar">
             <i class="fas fa-times"></i>
