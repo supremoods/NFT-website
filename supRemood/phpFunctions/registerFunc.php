@@ -108,7 +108,7 @@
             
             }else{
                 
-                $query = "INSERT INTO user(userID,username,email,password,balance) VALUES(NULL,'$username','$email','$password',0)";
+                $query = "INSERT INTO user(userID,username,email,password,balance,image) VALUES(NULL,'$username','$email','$password',0, '../images/default-avatar.png')";
 
                 $cmd = mysqli_query($conn,$query) or die(mysqli_error());
                 
