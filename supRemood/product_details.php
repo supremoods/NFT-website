@@ -1,9 +1,7 @@
 <?php
-  include("phpFunctions/passValue.php");
+ 
 	include("phpFunctions/dbConnect.php");
-  $ss = passID();
-  print_r($ss);
-  
+  include("phpFunctions/retrieveTemp.php");
   
 ?>
 <!DOCTYPE html>
@@ -72,15 +70,15 @@
       </div>
     </nav>
   </div>
-
+  
   <div class="product-details">
     <div class="card">
       <!-- card left -->
       <div class="product-figures">
         <div class="product-image">
           <?php
-        
-            $id_temp =2;
+            $id_temp = (int) $get_ID['temp'];
+         
             $sql = "SELECT * FROM product WHERE product_id = '$id_temp'";
             $query =  $conn->query($sql) or die ($conn->error);
             $fetch = $query->fetch_assoc();
@@ -90,19 +88,8 @@
         <div class="product-description">
           <h3>Description</h5>
             <div class="desc-txt">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus placeat modi, perspiciatis, aut
-                quos odit adipisci facere ipsa obcaecati autem vero temporibus deserunt recusandae fuga exercitationem
-                officia ipsum voluptas? Est!</p>
-              <br><br>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus consectetur odio impedit
-                autem tempore at harum vel labore quasi eveniet, architecto, blanditiis error minima modi dolores
-                aspernatur quo quidem.
-              </p>
-              <br><br>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus consectetur odio impedit
-                autem tempore at harum vel labore quasi eveniet, architecto, blanditiis error minima modi dolores
-                aspernatur quo quidem.
-              </p>
+              <p><?php echo $fetch['description'] ?></p>
+         
             </div>
         </div>
 
@@ -255,6 +242,20 @@
     </p>
   </section>
 
+  <script>
+    // var ctrl = 1;
+    // if(ctrl == 1){
+    //   window.location.reload();
+    //   ctrl = 0;
+    // }
+    window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+  }
+    
+  </script>
   <script src="assets/js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>

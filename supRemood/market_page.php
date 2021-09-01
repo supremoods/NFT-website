@@ -1,5 +1,6 @@
 <?php
 	include("phpFunctions/dbConnect.php");
+  include("phpFunctions/retrieveTemp.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
