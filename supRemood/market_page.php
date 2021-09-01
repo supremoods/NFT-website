@@ -88,9 +88,14 @@
     <div class="grid-container">
       <?php
         include("phpFunctions/marketPage.php");
+     
+      
+        //  echo $temp;
+        //  getID($temp);
+        //  window.location = 'getIDFunction.php';
       ?>
-
-   </div>
+      
+  </div>
   </div>
   <section class="footer">
     <div class="social">
@@ -111,19 +116,32 @@
       digitrad @ 2021
     </p>
   </section>
-  
+     
   <script src="assets/js/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <!-- PROTECT IMAGE -->
 <script src="https://cdn.jsdelivr.net/gh/ColonelParrot/ProtectImage.js@v1.2/src/ProtectImage.min.js">
 </script>
-
+<script>
+    var p1   
+     function reply_click(clicked_id)
+        {     
+            p1 = clicked_id;
+            console.log(p1);   
+            <?php 
+            $temp = 'document.writeln(p1)';
+            $prodID = $temp;
+            setcookie("pID", $prodID, time() + 900);?>    
+            window.location = 'product_details.php';       
+        }
+ </script>
 <script>
   $("body").on("contextmenu", "img", function(e) {
     return false;
   });
 </script>
+  
 </body>
 
 

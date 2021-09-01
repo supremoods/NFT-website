@@ -1,12 +1,13 @@
 <?php
-
+  // include("phpFunctions/getIDFunc.php");
+  // echo $prodID;
+  // exit();
 	include("phpFunctions/dbConnect.php");
-  $temp = "aioshdaioushdi";
 
-  echo "<script>document.write('.$temp.');</script>";
-  echo "$temp";
-  exit();
-  
+    // setcookie("getCookieID", $temp, time() + 2000);  
+    $eml = $_COOKIE['pID'];
+
+    echo $eml;
   
 ?>
 <!DOCTYPE html>
@@ -81,7 +82,14 @@
       <!-- card left -->
       <div class="product-figures">
         <div class="product-image">
-          <img src="images-folds/artwork-001.jpg" alt="shoe image" protected>
+          <?php
+        
+            $id_temp =2;
+            $sql = "SELECT * FROM product WHERE product_id = '$id_temp'";
+            $query =  $conn->query($sql) or die ($conn->error);
+            $fetch = $query->fetch_assoc();
+          ?>
+          <img src="<?php echo $fetch['image'] ?>" alt="shoe image" protected>
         </div>
         <div class="product-description">
           <h3>Description</h5>

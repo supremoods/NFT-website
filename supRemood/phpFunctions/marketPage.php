@@ -29,7 +29,8 @@
 
         do{ 
             echo'
-            <div class="grid-item" id="'.$row['product_id'].'">
+            <div class="grid-item" onClick="reply_click(this.id)" id="'.$row['product_id'].'">
+            
                 <div>
                 <img class="thumbnail" src="'.$row['image'].'" alt="sample image">
                     <div class="artwork-description">
@@ -51,12 +52,15 @@
                     </div>
                 </div>
             </div>
-            ';        
+            '; 
         } while ($row = $products->fetch_assoc());
     } else {
         echo '
         There are currently no artwork available in this category '; 
     }
+
+    // $temp = ;
+    
 ?>
 
     

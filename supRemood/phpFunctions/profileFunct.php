@@ -21,8 +21,9 @@
            
         }
         if (isset($_POST['uploadImage'])){
-            if(!empty($_POST['fileUpload'])){
-                $image = $_FILES['fileUpload']['name'];
+           $image = $_FILES['fileUpload']['name'];
+            if(!empty($image)){
+                
                 $target = "images/".basename($image);
 
                 $query = mysqli_query ($conn, "UPDATE user SET image='$image' WHERE userID = '$id' ") or die (mysqli_error());

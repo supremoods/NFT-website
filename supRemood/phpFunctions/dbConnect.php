@@ -6,6 +6,7 @@
 
     $conn = mysqli_connect($server, $username, $password, $dbName);
     
+    $prodID;
     if(mysqli_connect_errno()){
       // echo "Database not Connected";
         exit();
