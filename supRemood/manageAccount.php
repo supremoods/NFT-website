@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/navMarket.css">
   <link rel="stylesheet" href="assets/css/buy.css">
   <link rel="stylesheet" href="assets/css/check-verified.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/toast.css">
   <!-- Boxiocns CDN Link -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -287,6 +288,7 @@
 
     })
   </script>
+<script type="text/javascript" src="assets/js/toast.js"></script>
   <script src="assets/js/sidebar.js"></script>
   <script src="assets/js/scroll-out.js"></script>
   <script>

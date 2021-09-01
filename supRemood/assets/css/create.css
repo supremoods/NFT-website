@@ -27,6 +27,9 @@
   height: 100vh;
   color: var(--aqua);
   background-image: url(slide1.jpg);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
   font-family: "monserrat", sans-serif;
   display: flex;
   justify-content: center;

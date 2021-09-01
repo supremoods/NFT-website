@@ -26,7 +26,7 @@
                         <div class="toast-icon">
                           <i class="fas fa-exclamation"></i>
                         </div>
-                        <p class="toast-message"></p>
+                        <p class="toast-message">The username or password you’ve entered is incorrect</p>
                       </div>
                       <div class="toast-dismiss">
                         <i class="fas fa-times"></i>

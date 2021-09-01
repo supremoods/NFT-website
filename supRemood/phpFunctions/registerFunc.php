@@ -39,6 +39,22 @@
                     $(".toast-message").text("Username and Email is already taken.");
                   });
                   </script>
+                  <div id="toast-id">
+                  <div class="toast">
+                    <div class="toast-container">
+                      <div class="toast-content">
+                        <div class="toast-icon">
+                          <i class="fas fa-exclamation"></i>
+                        </div>
+                        <p class="toast-message">Username and Email is already taken.</p>
+                      </div>
+                      <div class="toast-dismiss">
+                        <i class="fas fa-times"></i>
+                      </div>
+                    </div>
+                    <div id="toast-progress"></div>
+                  </div>
+                </div>
                 ';
               } elseif ($checkUsername == 1 && $checkEmail == 0){
                 echo '
@@ -47,6 +63,22 @@
                     $(".toast-message").text("Username is already taken");
                   });
                 </script>
+                <div id="toast-id">
+                <div class="toast">
+                  <div class="toast-container">
+                    <div class="toast-content">
+                      <div class="toast-icon">
+                        <i class="fas fa-exclamation"></i>
+                      </div>
+                      <p class="toast-message">Username is already taken</p>
+                    </div>
+                    <div class="toast-dismiss">
+                      <i class="fas fa-times"></i>
+                    </div>
+                  </div>
+                  <div id="toast-progress"></div>
+                </div>
+              </div>
                 ';
               } else {
                 echo '
@@ -55,6 +87,22 @@
                       $(".toast-message").text("Email is already taken");
                     });
                   </script>
+                  <div id="toast-id">
+                  <div class="toast">
+                    <div class="toast-container">
+                      <div class="toast-content">
+                        <div class="toast-icon">
+                          <i class="fas fa-exclamation"></i>
+                        </div>
+                        <p class="toast-message">Email is already taken</p>
+                      </div>
+                      <div class="toast-dismiss">
+                        <i class="fas fa-times"></i>
+                      </div>
+                    </div>
+                    <div id="toast-progress"></div>
+                  </div>
+                </div>
                 ';
               }
             

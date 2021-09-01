@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 01, 2021 at 12:59 AM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 8.0.9
+-- Generation Time: Sep 01, 2021 at 07:57 AM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -78,17 +78,19 @@ CREATE TABLE `user` (
   `username` varchar(50) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
-  `balance` int(11) NOT NULL
+  `balance` int(11) NOT NULL,
+  `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`userID`, `username`, `email`, `password`, `balance`) VALUES
-(5, 'supremood', 'lappay.john@gmail.com', 'supremood', 0),
-(6, 'supremo', 'john@gmail.com', 'supremood', 0),
-(9, 'dormammu', 'jericovic65@gmail.com', 'dormammu', 0);
+INSERT INTO `user` (`userID`, `username`, `email`, `password`, `balance`, `image`) VALUES
+(1, 'ryuShimotzuki', 'ryu@gmail.com', 'supremo25', 0, ''),
+(5, 'supremood23', 'lappay.john2223@gmail.com', 'supremood', 0, ''),
+(6, 'supremo', 'john@gmail.com', 'supremood', 2567, '30739787_1588591967926106_7638881661316235264_n.jpg'),
+(9, 'dormammu', 'jericovic65@gmail.com', 'dormammu', 0, '');
 
 --
 -- Indexes for dumped tables
@@ -132,7 +134,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
