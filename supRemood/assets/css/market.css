@@ -27,6 +27,7 @@
   grid-gap: 20px;
   background: #FFFBFB;
   margin-top: 2em;
+  min-height: 45vh;
 }
 
 .line{
