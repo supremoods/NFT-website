@@ -54,7 +54,8 @@
             ';        
         } while ($row = $products->fetch_assoc());
     } else {
-        echo 'None '; 
+        echo '
+        There are currently no artwork available in this category '; 
     }
 ?>
 

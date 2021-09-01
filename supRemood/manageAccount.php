@@ -29,7 +29,7 @@
           <div class="icon cancel-btn cancel-btn_siderbar">
             <i class="fas fa-times"></i>
           </div>
-          <li class="links"><a class="btn-link1" href="index.php#cover-section">Home</a></li>
+          <li class="links"><a class="btn-link1" href="index.php#cover-section">Home </a></li>
           <li class="links"><a class="btn-link2" href="index.php#about-section">About
               us</a></li>
           <li class="links"><a class="btn-links" href="market_page.php">Gallery</a></li>
@@ -187,22 +187,22 @@
   </section>
 
   <!-- wallet alp -->
-  <section class="home-section">
+  <section class="home-section" >
     <div class="home-content">
         <div class="profile">
           <div class="dp-card">
  
           </div>
-          <div class="input-section">
+          <div class="input-section" >
 
           </div>
         </div>
-    <div class="home-content wallet-balance">
+    <div class="home-content wallet-balance" >
       <table class="wallet-alp">
         <tr>
           <td>
             <i class="icon-1 fas fa-user-circle"></i>
-            <h4 style = "margin-top: 45px;"> Username: </h4>
+            <h4 style = "margin-top: 45px;">Username: </h4>
             <p class = "username">
               <?php 
                 include('phpFunctions/manage.php');
@@ -214,7 +214,7 @@
           <td>
             <h3 style = "float: left; padding: 0; margin-left: 70px; color: #222328;"> Balance </h3>
             <h3 class = "ALP" style = "float: center; color: black; padding: 0; margin-left: 150px;"><?php echo $row['balance'] ?> ALP</h3>
-            <h3 class = "USD" style = "float: right; padding: 0; margin-right: 60px;"> = <?php echo $row['balance'] * 30 ?> PHP</h3>
+            <h3 class = "USD" style = "float: right; padding: 0; margin-right: 60px;"> = <?php echo $row['balance'] * 30 ?> PHP </h3>
           </td>
         </tr>
       </table>
