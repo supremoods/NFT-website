@@ -1,13 +1,9 @@
 <?php
-  // include("phpFunctions/getIDFunc.php");
-  // echo $prodID;
-  // exit();
+  include("phpFunctions/passValue.php");
 	include("phpFunctions/dbConnect.php");
-
-    // setcookie("getCookieID", $temp, time() + 2000);  
-    $eml = $_COOKIE['pID'];
-
-    echo $eml;
+  $ss = passID();
+  print_r($ss);
+  
   
 ?>
 <!DOCTYPE html>

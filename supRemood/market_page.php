@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/market.css" type="text/css">
   <link rel="stylesheet" href="assets/css/navMarket.css">
- 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="icon" href="images/logo.png" />
   <script src="https://kit.fontawesome.com/64d58efce2.js">
   </script>
@@ -118,22 +118,32 @@
   </section>
      
   <script src="assets/js/script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
 
 <!-- PROTECT IMAGE -->
 <script src="https://cdn.jsdelivr.net/gh/ColonelParrot/ProtectImage.js@v1.2/src/ProtectImage.min.js">
 </script>
 <script>
-    var p1   
+   
      function reply_click(clicked_id)
         {     
-            p1 = clicked_id;
-            console.log(p1);   
-            <?php 
-            $temp = 'document.writeln(p1)';
-            $prodID = $temp;
-            setcookie("pID", $prodID, time() + 900);?>    
-            window.location = 'product_details.php';       
+            // var product_id = [];
+            // var temp_data={};
+
+            // temp_data.id = clicked_id;
+            // product_id.push(temp_data)
+            // console.log(product_id);   
+            var temp_data =  clicked_id;
+
+            $.ajax({
+              url:"phpFunctions/getIDFunc.php",
+              method:"post",
+              data: { temp_data: JSON.stringify(temp_data) },
+              success: function(res){
+                console.log(res)
+              }
+            })
+           window.location = 'product_details.php';       
         }
  </script>
 <script>

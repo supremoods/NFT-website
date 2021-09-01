@@ -1,10 +1,9 @@
 <?php
+        $p1 = json_decode($_POST['temp_data']);
+        print_r($_POST['temp_data']);
 
-        function getID(&$temp){
-            $prodID = $temp; 
-            
-            $_SESSION['product_id'] = $prodID;       
-           
-        }
-       
+        include("phpFunctions/passValue.php");
+        $p2 = $p1;
+        passID($p2);
+
 ?> 
