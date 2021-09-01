@@ -90,9 +90,7 @@ $("#check").click(function() {
 $(function() {
   $('.verification-modal').show();
   $('.verification').show();
-  $('html, body').animate({
-    scrollTop: $('.wallet-balance').offset().top
-  }, 'fast');
+  
   setTimeout(function(){
     $('#check').prop('checked', true);
     $('.verification-head .label').text("Payment Successful");
@@ -101,7 +99,7 @@ $(function() {
   $('#close-button').attr('disabled', true);
 })
 
-$('#close-button').on('click', function() {
+$('#close-button').on('click', function() { 
   $("body").css("overflow-y", "scroll");
   $('.verification-head .label').text("Please Wait...");
   $('#deposit-amount').val("");
