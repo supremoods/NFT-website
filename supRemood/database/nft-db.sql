@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 01, 2021 at 07:57 AM
+-- Generation Time: Sep 01, 2021 at 01:59 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.3.27
 
@@ -70,6 +70,23 @@ INSERT INTO `product` (`product_id`, `name`, `price`, `description`, `creator`, 
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `temp_value`
+--
+
+CREATE TABLE `temp_value` (
+  `temp` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `temp_value`
+--
+
+INSERT INTO `temp_value` (`temp`) VALUES
+(9);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -90,7 +107,9 @@ INSERT INTO `user` (`userID`, `username`, `email`, `password`, `balance`, `image
 (1, 'ryuShimotzuki', 'ryu@gmail.com', 'supremo25', 0, ''),
 (5, 'supremood23', 'lappay.john2223@gmail.com', 'supremood', 0, ''),
 (6, 'supremo', 'john@gmail.com', 'supremood', 2567, '30739787_1588591967926106_7638881661316235264_n.jpg'),
-(9, 'dormammu', 'jericovic65@gmail.com', 'dormammu', 0, '');
+(9, 'dormammu', 'jericovic65@gmail.com', 'dormammu', 0, ''),
+(15, 'ryu_024', 'ryu_shimutzuki23@gmail.com', 'supremo25', 52, ''),
+(16, 'ryu123', 'ryu123@gmail.com', 'supremo', 0, 'photo_2021-08-17_20-27-32.jpg');
 
 --
 -- Indexes for dumped tables
@@ -134,7 +153,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
