@@ -58,21 +58,21 @@
   </div>
 
   <div class="wrap">
-    <div class="topnav">
-      <a href="#all"> All </a>
-      <a href="#digital"> Digital Art </a>
-      <a href="#digital"> Painting </a>
-      <a href="#digital"> Pixel Art </a>
-      <a href="#digital"> Intergrated Art </a>
-      <a href="#chibi"> Chibi Art </a>
-      <a href="#vector"> Vector Art </a>
+    <form class="topnav" method="post">
+      <input type="submit" name="filter" value="All" />
+      <input type="submit" name="digital_button" value="Digital Art" />
+      <input type="submit" name="painting_button" value="Painting" />
+      <input type="submit" name="pixel_button" value="Pixel Art" />
+      <input type="submit" name="integrated_button" value="Intergrated Art" />
+      <input type="submit" name="chibi_button" value="Chibi Art" />
+      <input type="submit" name="vector_button" value="Vector Art" />
       <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+        <div>
+          <input type="text" placeholder="Search.." name="searchField">
+          <button type="submit" name="search"><i class="fa fa-search"></i></button>
+        </div>
       </div>
-    </div>
+    </form>
 
     <hr>
 

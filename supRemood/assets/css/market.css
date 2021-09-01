@@ -153,21 +153,24 @@ canvas{
   margin-left: 100px;
 }
 
-.topnav a {
+.topnav input[type=submit] {
   float: left;
+  background: transparent;
+  border: none;
   display: block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 15px;
+  transition: ease .2s;
 }
 
-.topnav a:hover {
+.topnav input[type=submit]:hover {
   color: #3b55e6;
 }
 
-.topnav a.active {
+.topnav input[type=submit].active {
   color: #3b55e6;
 }
 
@@ -262,7 +265,7 @@ canvas{
   .topnav .search-container {
     float: none;
   }
-  .topnav a,
+  .topnav input[type=submit],
   .topnav .topnav .search-container button {
     float: none;
     display: block;
