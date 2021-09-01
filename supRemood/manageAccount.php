@@ -1,6 +1,5 @@
 <?php
 	include('phpFunctions/dbConnect.php');
- 
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -11,7 +10,10 @@
   <link rel="icon" href="images/logo.png" />
   <link rel="stylesheet" href="assets/css/sidebar.css">
   <link rel="stylesheet" href="assets/css/navMarket.css">
+  <link rel="stylesheet" href="assets/css/buy.css">
+  <link rel="stylesheet" href="assets/css/check-verified.css">
   <!-- Boxiocns CDN Link -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://kit.fontawesome.com/64d58efce2.js">
   </script>
@@ -180,6 +182,74 @@
     
 
   </section>
+
+  <!-- wallet alp -->
+  <section class="home-section">
+    <div class="home-content">
+        <div class="profile">
+          <div class="dp-card">
+ 
+          </div>
+          <div class="input-section">
+
+          </div>
+        </div>
+    <div class="home-content wallet-balance">
+      <table class="wallet-alp">
+        <tr>
+          <td>
+            <i class="icon-1 fas fa-user-circle"></i>
+            <h4 style = "margin-top: 45px;"> Username: </h4>
+            <p class = "username">
+              <?php 
+                include('phpFunctions/manage.php');
+              ?></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <h3 style = "float: left; padding: 0; margin-left: 70px; color: #222328;"> Balance </h3>
+            <h3 class = "ALP" style = "float: center; color: black; padding: 0; margin-left: 150px;"><?php echo $row['balance'] ?> ALP</h3>
+            <h3 class = "USD" style = "float: right; padding: 0; margin-right: 60px;"> = <?php echo $row['balance'] * 30 ?> PHP</h3>
+          </td>
+        </tr>
+      </table>
+    <div class="button-container">
+      <button type="button" id="buy-button" name="button"><i class="far fa-credit-card"></i></button>
+    </div>
+    <div class="buy-modal">
+        <form method="post" class="buy-container">
+          <div class="buy-head">
+            <p class="label">Buy with Your Credit/Debit Card</p>
+            <span tabIndex="0" class="close-buy"><i class="fas fa-times"></i></span>
+          </div>
+          <div class="buy-spend" tabindex="0">
+            <p class="input-text">Spend</p>
+            <div class="spend-input">
+              <input id="deposit-amount" type="text" name="depoAmount" maxlength="8" placeholder="1000.00 - 100000.00">
+              <div class="currency">
+                <div><img class="logo-buy" src="https://cdn3.iconfinder.com/data/icons/major-currencies-24px-1/24/peso_philippine_business_PHP-512.png" alt=""></div>
+                <span>PHP</span>
+              </div>
+            </div>
+          </div>
+          <p class="error-message">The limit per transaction is between 1000.00 - 100000.00 PHP. Please adjust the amount.</p>
+          <div class="buy-receive" tabindex="0">
+            <p class="input-text">Receive</p>
+            <div class="receive-input">
+              <input id="receive-amount" type="text" name="receiveAmount" maxlength="10" placeholder="0.00">
+              <div class="currency">
+                <div><img class="logo-buy" src="images/logo.png" alt=""></div>
+                <span>ALP</span>
+              </div>
+            </div>
+          </div>
+          <input id="buy-submit" type="submit" name="inputBuy" value="Continue">
+        </form>
+    </div>
+  </section>
+
   <section id="Sell-content" class="sell-section">
     <div class="home-content">
         <h1>Sell Art Section</h1>
@@ -198,8 +268,23 @@
     </div>
   </section>
   <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script>
+    $(function (){
+      if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+      } 
+    $("body").css("overflow-y", "scroll");
+
+    })
+  </script>
   <script src="assets/js/sidebar.js"></script>
+  <script src="assets/js/scroll-out.js"></script>
+  <script>
+    ScrollOut({
+      targets: 'div, img, h1'
+    })
+  </script>
+  <script src="assets/js/buy.js"></script>
 </body>
 
 </html>

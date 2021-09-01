@@ -13,6 +13,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/Log_In.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/nav.css">
   <link rel="stylesheet" type="text/css" href="assets/css/toast.css">
+  <link rel="stylesheet" href="assets/css/buy.css">
+  <link rel="stylesheet" href="assets/css/check-verified.css">
 	<script type="text/javascript" src="assets/js/account.js"></script>
 </head>
 <style>
@@ -47,9 +49,9 @@
         <div class="form" >
           <div class="iconId">
             <i class="fa fa-user icon-1"></i>
-            <input class="textplace" name="username" type="text" placeholder="Username" /required><br>
+            <input class="textplace" name="username" type="text" placeholder="Username" required><br>
             <i class="fas fa-unlock-alt icon-1"></i>
-            <input class="textplace" name="password" type="password" placeholder="Password" /required>
+            <input class="textplace" name="password" type="password" placeholder="Password" required>
           </div>
           <a href="forgot.php" class="btnForgetPwd">Forgot Password?</a>
           <a href="register.php" class="donthaveacc">Register here</a><br>
