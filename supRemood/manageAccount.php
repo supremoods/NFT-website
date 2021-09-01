@@ -53,7 +53,7 @@
               <input type="checkbox" id="show-features">
               <ul class="drop-down">
                 <li><a href="#" style="color:#04f3fc; pointer-events: none;">'.$fetch['username'].'</a></li>
-                <li><a href="manageAccount.php">Account</a></li>
+                <li><a href="#home-section.php">Account</a></li>
                 <li><a href="manageAccount.php">Sell Arts</a></li>
                 <li><a href="manageAccount.php">Order</a></li>
                 <li><a href="manageAccount.php">Collections</a></li>

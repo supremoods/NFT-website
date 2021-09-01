@@ -48,7 +48,7 @@
             <a href="manageAccount.php" class="desktop-link child_1"><img src="images/'.$fetch['image'].'" ></a>
             <ul class = "drop-down">
             <li><a href="#" style="color:#04f3fc; pointer-events: none;">'.$fetch['username'].'</a></li>
-            <li><a href="#">Account</a></li>
+            <li><a href="manageAccount.php#home-section">Account</a></li>
             <li><a href="#">Sell Arts</a></li>
             <li><a href="#">Order</a></li>
             <li><a href="#">Collections</a></li>
