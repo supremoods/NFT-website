@@ -24,7 +24,7 @@
   <div class="header">
     <nav class="nav-bar">
       <div class="content">
-        <div class="logo"><a href="#"><img src="images/logo.png" alt=""><p>ALPAS</p></a></div>
+        <div class="logo"><a href="index.php"><img src="images/logo.png" alt=""><p>ALPAS</p></a></div>
         <ul class="menu-list">
           <div class="icon cancel-btn cancel-btn_siderbar">
             <i class="fas fa-times"></i>
@@ -52,6 +52,7 @@
               <a href="manageAccount.php" class="desktop-link child_1"><img src="images/'.$fetch['image'].'" ></a>
               <input type="checkbox" id="show-features">
               <ul class="drop-down">
+                <li><a href="#" style="color:#04f3fc; pointer-events: none;">'.$fetch['username'].'</a></li>
                 <li><a href="manageAccount.php">Account</a></li>
                 <li><a href="manageAccount.php">Sell Arts</a></li>
                 <li><a href="manageAccount.php">Order</a></li>
@@ -71,12 +72,13 @@
   </div>
   <div class="sidebar close down">
     <div class="logo-details">
-      <i class='bx bxl-angular'></i>
+      <img class="logo-icon" src="images/logo.png" alt="" srcset="">
     </div>
     <ul class="nav-links">
       <li>
         <div class="iocn-link">
           <a href="#home-section">
+          
             <i class='bx bx-user-circle'></i>
             <span class="link_name">Acount</span>
           </a>
@@ -206,7 +208,7 @@
       <table class="wallet-alp">
         <tr>
           <td>
-            <i class="icon-1 fas fa-user-circle"></i>
+            <img class="icon-1" src="images/<?php echo $fetch['image'] ?>" alt="" srcset="">
             <h4 style = "margin-top: 45px;">Username: </h4>
             <p class = "username">
               <?php 

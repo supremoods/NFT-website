@@ -44,7 +44,7 @@ body{
 }
 
 
-.sidebar.down .logo-details i{
+.sidebar.down .logo-details img{
     display: none;
 }
 
@@ -68,12 +68,9 @@ body{
   align-items: center;
   justify-content: center;
 }
-.sidebar .logo-details i{
-  font-size: 30px;
-  color: #fff;
-  height: 50px;
-  min-width: 78px;
-  text-align: center;
+.sidebar .logo-details img{
+  height: 30px;
+  width: 30px;
   line-height: 50px;
 }
 
@@ -243,14 +240,15 @@ body{
 }
 
 .prof_container{
-  
+
   display:flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .profile_section{
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,10 +257,10 @@ body{
   background-color: #11111109 ;
   border-radius:20px;
   padding:4em;
-  width: 40%;
+  width: 100vh;
   height: 50%;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-  
+  object-fit: cover;
 }
 
 .img-section{
@@ -308,17 +306,19 @@ body{
 .prof_container .input-section{
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   position: relative;
+  object-fit: fill;
+  
 }
 .input-section .input-content{
   border-spacing: 0px 20px;
   border-collapse: separate; 
-
+  margin:1em;
 }
 .input-section .input-content tr{
   background-color: var(--light-gray-alt);
- 
+
 }
 .input-section .input-content td{
   border: none;
@@ -328,7 +328,7 @@ body{
 .input-section .input-textbox{
   background-color: rgba(255, 255, 255, 0);
   border: none;
-  width: 100%;
+  width: 20vh;
 }
 .input-section .input-content td label{
   margin-left:2em;
@@ -402,7 +402,9 @@ h4, .username{
 
 
 .icon-1{
-  font-size: 130px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
   float:left;
 
   position: relative;

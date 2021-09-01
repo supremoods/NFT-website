@@ -1,4 +1,6 @@
-
+<?php
+	include("phpFunctions/dbConnect.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +21,7 @@
   <div class="header">
     <nav class="nav-bar">
       <div class="content">
-        <div class="logo"><a href="#"><img src="images/logo.png" alt=""><p>ALPAS</p></a></div>
+        <div class="logo"><a href="#cover-section"><img src="images/logo.png" alt=""><p>ALPAS</p></a></div>
         <ul class="menu-list">
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
@@ -37,11 +39,15 @@
               <li><a id='reg-btn' href='register.php'>Register</a></li>
             ";
           }else{
+            $id = (int) $_SESSION['id'];
+            $query = mysqli_query ($conn, "SELECT * FROM user WHERE userID = '$id' ") or die (mysqli_error());
+              $fetch = mysqli_fetch_array ($query);
             echo '
             <li>
-            <a href="manageAccount.php" class="desktop-link child_1"><i class="fas fa-user-astronaut"></i></a>
+            <a href="manageAccount.php" class="desktop-link child_1"><img src="images/'.$fetch['image'].'" ></a>
             <input type="checkbox" id="show-features">
             <ul class = "drop-down">
+              <li><a href="#" style="color:#04f3fc; pointer-events: none;">'.$fetch['username'].'</a></li>
               <li><a href="#">Account</a></li>
               <li><a href="#">Sell Arts</a></li>
               <li><a href="#">Order</a></li>
@@ -285,7 +291,7 @@
   <div class="contact-section" id="contact-us">
     <h1>Contact Us</h1>
     <div class="border"></div>
-    <form class="contact-form" action="index.html" method="post">
+    <form class="contact-form" method="post">
         <input type="text" class="contact-form-text" placeholder="Your name">
         <input type="email" class="contact-form-text" placeholder="Your email">
         <input type="text" class="contact-form-text" placeholder="Your phone">

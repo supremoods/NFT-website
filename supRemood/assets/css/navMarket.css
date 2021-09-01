@@ -83,6 +83,8 @@
 }
 .nav-bar .menu-list {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-list li {
   list-style: none;
@@ -174,7 +176,7 @@
   padding: 1em;
   border-radius: 10px;
   top: 40px;
-  right: 25px;
+  right: 55px;
   z-index: -1;
   opacity: 0;
   visibility: hidden;
@@ -211,11 +213,11 @@
   padding-left: 4em;
 }
 
+
+
 .child_1 img {
-  position:absolute;
+  position:relative;
   border-radius: 50%;
-  top:-15px;
-  left:30px;
   height: 40px;
   width: 40px;
 }
@@ -293,12 +295,10 @@
   }
   .child_1 img{
     position: relative;
-    left:0;
+    left:0; 
     transition: all .3s ease;
   }
-  .child_1 i:hover{
-    color: var(--aqua-alt);
-  }
+ 
 
 
   .menu-list li .drop-down {

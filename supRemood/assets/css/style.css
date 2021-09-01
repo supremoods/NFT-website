@@ -39,13 +39,15 @@ body {
   width: 100%;
   padding: 10px 0;
   transition: all 0.2s ease;
+ 
   /* background-color: #f0f2f7f3; */
 }
 .nav-bar.sticky {
   padding: 10px 0;
   background: var(--dark-blue-alt);
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
-  transition: all ease-in .25s
+  transition: all ease-in .25s;
+
 
 }
 
@@ -96,6 +98,8 @@ body {
 }
 .nav-bar .menu-list {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-list li {
   list-style: none;
@@ -143,7 +147,7 @@ body {
   padding: 1em;
   border-radius: 10px;
   top: 40px;
-  right: 30px;
+  right: 55px;
   z-index: -1;
   opacity: 0;
   visibility: hidden;
@@ -174,11 +178,19 @@ body {
 }
 
 .child_1 {
+
   padding-left: 4em;
+ 
 }
-.child_1 i {
-  font-size: 1.9em;
+
+
+.child_1 img {
+  position:relative;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
+
 .icon {
   color: var(--dark-blue-alt);
   font-size: 20px;
