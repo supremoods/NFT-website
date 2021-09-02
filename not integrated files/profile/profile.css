@@ -1,0 +1,119 @@
+body{
+    margin:8%;
+    font-family: 'monserrat', sans-serif;
+}
+
+.profilecon{ /*PROFILE PICCONTAINER*/
+    box-shadow: 0 0 10px 2px #3333331a;
+    border:none;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 350px;
+    height: 377px;
+    text-align: center;   
+}
+
+.userphoto{
+    width: 200px;
+	height: 200px;
+	border-radius: 50%;
+    padding: 50px;
+}
+
+.profiledetails{
+   font-size:25px;
+}
+
+.labeledit{
+    font-size:15px;
+    padding-left:85px;
+    padding-bottom:20px;
+}
+
+.editprofile{
+    width:90%;
+    padding-left: 40%;
+}
+
+#headingedit{
+    font-size:15px;
+    margin-left:75px;
+}
+
+hr{
+    width:70%;
+    position:absolute;
+}
+
+.textplaceedit:focus{
+    outline:none;
+}
+
+.buttonedit{
+	margin-top: 25px;
+	
+    background-color: white;
+	border: 1px solid #E4E7EF;
+ 
+	
+	color: rgb(19, 17, 17);
+	width: 100%;
+    height:45px;
+}
+
+.buttonedit:hover {
+	background-color: black;
+	color:white;
+} 
+
+.profilecontatiner{
+    height:auto;
+    width:auto;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border:none;
+
+    margin-left:1%;
+
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-right:30px;
+    padding-left:250px;
+}
+
+.textbox{
+    border: 1px solid #F0F2F7;
+    border-radius: 10px;
+
+    height: 40px;
+    width: 250%;
+
+    font-family: 'monserrat', sans-serif;
+    font-size: 15px;
+
+    box-shadow: rgba(199, 207, 214, 0.2) 0px 8px 24px;
+
+    background: #F0F2F7;
+
+    padding:5px;
+    padding-left: 10px;
+}
+
+input:focus{
+    outline: none;
+    background: white;
+}
+
+.textbox:hover{
+    background:white;
+    border: 1px solid #F0F2F7;
+}
+
+.profilelabel{
+    font-size: 13px;
+    font-family: 'monserrat', sans-serif;
+}
+
+#del{
+    color:#fe543b;
+}
