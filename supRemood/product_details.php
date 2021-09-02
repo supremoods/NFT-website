@@ -70,8 +70,13 @@
       </div>
     </nav>
   </div>
+
+  <div class="return-button">
+    <a href="market_page.php"><i class="fas fa-chevron-left"></i></a>
+  </div>
   
   <div class="product-details">
+    
     <div class="card">
       <!-- card left -->
       <div class="product-figures">
@@ -98,7 +103,7 @@
 
     <!-- card right -->
     <div class="product-content">
-      <div class="product-title">Digital Omen</div>
+      <div class="product-title"><?php echo $fetch['name'] ?></div>
       <h3>Auction Ends</h3>
       <div class="countdown-container">
         <div class="countdown-el days-c">
@@ -120,10 +125,10 @@
       </div>
 
       <p id="price-parag">Current Bid</p>
-      <p class="product-price"><i class="fab fa-gg"></i> <span
-          id="alp-price">5&nbsp;0&nbsp;</span>A&nbsp;L&nbsp;P&nbsp;<span id="usd-price">= $ 198.88</span></p>
+      <p class="product-price"><img style="width: 35px; height: 35px; padding-top: 10px;" src="images/logo.png" alt=""><span
+          id="alp-price"><?php echo $fetch['price'] ?><span id="usd-price"> = <?php echo $fetch['price'] * 30?> PHP</span></p>
 
-      <button class="button-buy" id="buy-button">Buy now</button n>
+      <button class="button-buy" id="buy-button">Buy now</button>
 
 
       <div class="product-list">
@@ -261,6 +266,11 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/bid.js"></script>
   <script src="assets/js/countdown.js"></script>
+  <script>
+  $("body").on("contextmenu", "img", function(e) {
+    return false;
+  });
+</script>
 </body>
 
 </html>

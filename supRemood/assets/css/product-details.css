@@ -47,6 +47,13 @@ body{
    padding: 2rem 0rem;
 }
 
+.logo-market{
+   width: 30px;
+   height: 30px; 
+   object-fit: cover;
+ }
+ 
+
 .product-title { 
    font-size: 3rem;
    text-transform: capitalize;

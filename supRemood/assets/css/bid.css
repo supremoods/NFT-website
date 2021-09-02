@@ -210,6 +210,27 @@ input[type=number] {
   cursor: pointer;
 }
 
+.return-button{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  top: 3.5em;
+  left: 7em;
+  font-size: 30px;
+  border-radius: 50%;
+  border: 2px solid black;
+  transition: ease .3s;
+}
+
+.return-button a{
+  color: black;
+}
+
 #buy-submit:hover, #buy-submit:focus, #confirm-submit:hover, #confirm-submit:focus, #close-button:hover, #close-button:focus{
   background: var(--dark-blue);
 }

@@ -2,7 +2,7 @@ const alpPriceEl = document.getElementById("alp-price");
 const usdPriceEl = document.getElementById("usd-price");
 const errorMessage = document.querySelector(".error-message");
 let wallet = 1000;
-let currentBidAlp = 500;
+let currentBidAlp;
 let prevBidAlp = [];
 prevBidAlp.push(currentBidAlp);
 
@@ -12,7 +12,6 @@ addBidPrice();
 
 function addBidPrice() {
  
-  let currentBidUsd = currentBidAlp / .60;
   usdPriceEl.innerHTML = `= $ ${currentBidUsd.toFixed(2)}`;
   console.log($('#deposit-amount').val());
   console.log("current-bid =" +currentBidAlp);
