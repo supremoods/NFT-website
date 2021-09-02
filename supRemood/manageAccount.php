@@ -260,7 +260,7 @@
         </form>
     </div>
   </section>
-
+<!-- 
   <section id="Sell-content" class="sell-section">
     <div class="home-content">
         <h1>Sell Art Section</h1>
@@ -277,7 +277,7 @@
     <div class="home-content">
         <h1>Collections</h1>
     </div>
-  </section>
+  </section> -->
   <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>
     $(function (){
