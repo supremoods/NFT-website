@@ -2,7 +2,7 @@ const alpPriceEl = document.getElementById("alp-price");
 const usdPriceEl = document.getElementById("usd-price");
 const errorMessage = document.querySelector(".error-message");
 let wallet = 1000;
-let currentBidAlp;
+let currentBidAlp = parseInt(alpPriceEl.innerHTML) ;
 let prevBidAlp = [];
 prevBidAlp.push(currentBidAlp);
 
@@ -12,11 +12,14 @@ addBidPrice();
 
 function addBidPrice() {
  
-  usdPriceEl.innerHTML = `= $ ${currentBidUsd.toFixed(2)}`;
+  let currentBidUsd = currentBidAlp * 30;
+  console.log(currentBidUsd);
   console.log($('#deposit-amount').val());
   console.log("current-bid =" +currentBidAlp);
   console.log(prevBidAlp);
   alpPriceEl.innerHTML = `${currentBidAlp} `; 
+  usdPriceEl.innerHTML = `= $ ${currentBidUsd}`;
+
 }
 
 
@@ -87,7 +90,7 @@ $('#deposit-amount').on('input', function(){
     this.value = this.value.slice(0,8);
   }
   let receive = $('#receive-amount');
-  let value = parseFloat($('#deposit-amount').val()  / .60).toFixed(2);
+  let value = parseFloat($('#deposit-amount').val()  * 30).toFixed(2);
 
   receive.val(value);
   inputInvalid();

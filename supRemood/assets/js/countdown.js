@@ -19,7 +19,7 @@ const minsEl= document.getElementById("mins");
 const secondsEl= document.getElementById("seconds");
 
 let timer = undefined;
-const timeFrame = "1 September 2021 13:40:00";
+const timeFrame = "2 September 2021 13:40:00";
 
 
 

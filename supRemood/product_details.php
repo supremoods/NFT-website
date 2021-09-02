@@ -126,7 +126,7 @@
 
       <p id="price-parag">Current Bid</p>
       <p class="product-price"><img style="width: 35px; height: 35px; padding-top: 10px;" src="images/logo.png" alt=""><span
-          id="alp-price"><?php echo $fetch['price'] ?><span id="usd-price"> = <?php echo $fetch['price'] * 30?> PHP</span></p>
+          id="alp-price"><?php echo $fetch['price'] ?></span><span id="usd-price"> = <?php echo $fetch['price'] * 30?> PHP</span></p>
 
       <button class="button-buy" id="buy-button">Buy now</button>
 
@@ -204,8 +204,8 @@
           <div class="receive">
 
             <div class="currency">
-              <div><i class="icon-1 fas fa-dollar-sign"></i></div>
-              <span>USD</span>
+              <div><i class="icon-1 fas fa-ruble-sign"></i></div>
+              <span>PHP</span>
             </div>
             <p class="usd-val"></p>
           </div>
@@ -261,11 +261,17 @@
   }
     
   </script>
-  <script src="assets/js/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/js/bid.js"></script>
+ 
+  <script type="text/javascript" src="assets/js/bid.js">
+      console.log(currentBidUsd +"231231231");
+</script>
+
   <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/script.js"></script>
+ 
+
   <script>
   $("body").on("contextmenu", "img", function(e) {
     return false;
