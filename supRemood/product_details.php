@@ -2,7 +2,10 @@
  
 	include("phpFunctions/dbConnect.php");
   include("phpFunctions/retrieveTemp.php");
-  
+  session_start();
+  if(!ISSET($_SESSION['id'])){
+   echo "<script> window.location = 'log_in.php';</script>";
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -127,20 +130,8 @@
       <p id="price-parag">Current Bid</p>
       <p class="product-price"><img style="width: 35px; height: 35px; padding-top: 10px;" src="images/logo.png" alt=""><span
           id="alp-price"><?php echo $fetch['price'] ?></span><span id="usd-price"> = <?php echo $fetch['price'] * 30?> PHP</span></p>
-      <?php
-      session_start();
-      if(!ISSET($_SESSION['id'])){
-        echo'
-        <a class="button-buy" href="log_in.php" style="text-decoration: none;">Log in to start bidding</a>
-        ';
-      }else{
-        echo '
-       <button class="button-buy" id="buy-button">Buy now</button>
-       
-        ';
-      }
-      ?>  
 
+      <button class="button-buy" id="buy-button">Buy now</button>
       <div class="product-list">
 
         <div class="bid-title">Bid History</div>
