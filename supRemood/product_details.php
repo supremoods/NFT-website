@@ -37,7 +37,7 @@
           <li class="links"><a class="btn-links" href="market_page.php">Gallery</a></li>
           <li class="links"><a class="btn-link3" href="index.php#contact-us">Contact Us</a></li>
           <?php
-          session_start();
+
           if(!ISSET($_SESSION['id'])){
             echo"
               <li><a id='log-in-btn' href='log_in.php'>Log in</a></li>
@@ -127,9 +127,19 @@
       <p id="price-parag">Current Bid</p>
       <p class="product-price"><img style="width: 35px; height: 35px; padding-top: 10px;" src="images/logo.png" alt=""><span
           id="alp-price"><?php echo $fetch['price'] ?></span><span id="usd-price"> = <?php echo $fetch['price'] * 30?> PHP</span></p>
-
-      <button class="button-buy" id="buy-button">Buy now</button>
-
+      <?php
+      session_start();
+      if(!ISSET($_SESSION['id'])){
+        echo'
+        <a class="button-buy" href="log_in.php" style="text-decoration: none;">Log in to start bidding</a>
+        ';
+      }else{
+        echo '
+       <button class="button-buy" id="buy-button">Buy now</button>
+       
+        ';
+      }
+      ?>  
 
       <div class="product-list">
 
